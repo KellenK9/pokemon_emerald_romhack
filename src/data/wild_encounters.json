@@ -4466,13 +4466,13 @@
               },
               {
                 "min_level": 28,
-                "max_level": 28,
+                "max_level": 29,
                 "species": "SPECIES_SHUPPET"
               },
               {
-                "min_level": 29,
+                "min_level": 27,
                 "max_level": 29,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_MEDITITE"
               },
               {
                 "min_level": 29,
@@ -7359,7 +7359,7 @@
               },
               {
                 "min_level": 38,
-                "max_level": 38,
+                "max_level": 42,
                 "species": "SPECIES_GOLBAT"
               },
               {
@@ -7368,9 +7368,9 @@
                 "species": "SPECIES_HARIYAMA"
               },
               {
-                "min_level": 42,
+                "min_level": 38,
                 "max_level": 42,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_MEDITITE"
               },
               {
                 "min_level": 42,
@@ -7463,18 +7463,18 @@
               },
               {
                 "min_level": 42,
-                "max_level": 42,
+                "max_level": 44,
                 "species": "SPECIES_SABLEYE"
+              },
+              {
+                "min_level": 40,
+                "max_level": 44,
+                "species": "SPECIES_MEDITITE"
               },
               {
                 "min_level": 44,
                 "max_level": 44,
-                "species": "SPECIES_GOLBAT"
-              },
-              {
-                "min_level": 44,
-                "max_level": 44,
-                "species": "SPECIES_SABLEYE"
+                "species": "SPECIES_MEDICHAM"
               },
               {
                 "min_level": 42,
