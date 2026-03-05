@@ -7,16 +7,16 @@
         {
           "type": "land_mons",
           "encounter_rates": [
-            15,
-            15,
+            20,
+            20,
             10,
             10,
             10,
             10,
             5,
             5,
-            10,
-            8,
+            4,
+            4,
             1,
             1
           ]
@@ -1469,7 +1469,7 @@
               {
                 "min_level": 13,
                 "max_level": 13,
-                "species": "SPECIES_ILLUMISE"
+                "species": "SPECIES_VOLBEAT"
               },
               {
                 "min_level": 13,
@@ -1484,7 +1484,7 @@
               {
                 "min_level": 13,
                 "max_level": 13,
-                "species": "SPECIES_VOLBEAT"
+                "species": "SPECIES_SURSKIT"
               },
               {
                 "min_level": 13,
