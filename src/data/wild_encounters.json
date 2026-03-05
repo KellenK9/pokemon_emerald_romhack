@@ -202,13 +202,13 @@
                 "species": "SPECIES_RALTS"
               },
               {
-                "min_level": 4,
+                "min_level": 3,
                 "max_level": 4,
-                "species": "SPECIES_ZIGZAGOON"
+                "species": "SPECIES_SURSKIT"
               },
               {
                 "min_level": 3,
-                "max_level": 3,
+                "max_level": 4,
                 "species": "SPECIES_SEEDOT"
               }
             ]
@@ -232,9 +232,9 @@
                 "species": "SPECIES_MARILL"
               },
               {
-                "min_level": 5,
-                "max_level": 10,
-                "species": "SPECIES_MARILL"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_SURSKIT"
               },
               {
                 "min_level": 20,
@@ -1231,7 +1231,7 @@
               {
                 "min_level": 17,
                 "max_level": 17,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_SURSKIT"
               },
               {
                 "min_level": 15,
@@ -1259,9 +1259,9 @@
                 "species": "SPECIES_MARILL"
               },
               {
-                "min_level": 5,
-                "max_level": 10,
-                "species": "SPECIES_MARILL"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_SURSKIT"
               },
               {
                 "min_level": 20,
@@ -3639,9 +3639,9 @@
                 "species": "SPECIES_MARILL"
               },
               {
-                "min_level": 5,
-                "max_level": 10,
-                "species": "SPECIES_MARILL"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_SURSKIT"
               },
               {
                 "min_level": 20,
