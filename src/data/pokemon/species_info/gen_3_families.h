@@ -5803,7 +5803,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_VOLBEAT] =
     {
         .baseHP        = 65,
-        .baseAttack    = 73,
+        .baseAttack    = 93,
         .baseDefense   = P_UPDATED_STATS >= GEN_7 ? 75 : 55,
         .baseSpeed     = 85,
         .baseSpAttack  = 47,
@@ -5885,7 +5885,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseAttack    = 47,
         .baseDefense   = P_UPDATED_STATS >= GEN_7 ? 75 : 55,
         .baseSpeed     = 85,
-        .baseSpAttack  = 73,
+        .baseSpAttack  = 93,
         .baseSpDefense = P_UPDATED_STATS >= GEN_7 ? 85 : 75,
         .types = MON_TYPES(TYPE_BUG),
         .catchRate = 150,
@@ -8110,7 +8110,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #endif
         .evYield_SpAttack = 2,
         .itemCommon = ITEM_MOON_STONE,
-        .itemRare = ITEM_MOON_STONE,
+        .itemRare = ITEM_SHINY_STONE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
@@ -8190,7 +8190,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #endif
         .evYield_Attack = 2,
         .itemCommon = ITEM_SUN_STONE,
-        .itemRare = ITEM_SUN_STONE,
+        .itemRare = ITEM_SHINY_STONE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
