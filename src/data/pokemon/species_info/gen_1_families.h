@@ -14444,6 +14444,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .catchRate = 120,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 69 : 135,
         .evYield_Defense = 1,
+        .itemRare = ITEM_PROTECTOR,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
