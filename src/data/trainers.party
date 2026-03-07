@@ -4799,27 +4799,26 @@ Double Battle: No
 AI: Basic Trainer
 
 Geodude
-Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
+Ability: Sand Veil
+Level: 13
+- Sandstorm
 - Defense Curl
-- Rock Throw
+- Bulldoze
 - Rock Tomb
 
-Geodude
-Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
+Lileep @ Big Root
+Level: 14
+- Ingrain
+- Wrap
+- Ancient Power
+- Mega Drain
 
 Nosepass @ Oran Berry
+Ability: Sand Force
 Level: 15
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Block
-- Harden
-- Tackle
+- Bulk Up
+- Spark
+- Sandstorm
 - Rock Tomb
 
 === TRAINER_BRAWLY_1 ===
