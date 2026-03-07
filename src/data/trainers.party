@@ -5351,7 +5351,8 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
+Poochyena @ Toxic Orb
+Ability: Quick Feet
 Level: 5
 
 === TRAINER_BILLY ===
@@ -5592,10 +5593,10 @@ Double Battle: No
 AI: Check Bad Move
 
 Zigzagoon
-Level: 4
+Level: 5
 
 Taillow
-Level: 3
+Level: 4
 
 === TRAINER_TIMMY ===
 Name: TIMMY
@@ -9887,10 +9888,10 @@ Double Battle: No
 AI: Check Bad Move
 
 Zigzagoon
-Level: 4
+Level: 6
 
 Shroomish
-Level: 4
+Level: 6
 
 === TRAINER_HALEY_1 ===
 Name: HALEY
@@ -10067,10 +10068,10 @@ Double Battle: No
 AI: Check Bad Move
 
 Wurmple
-Level: 4
+Level: 5
 
 Wurmple
-Level: 4
+Level: 5
 
 === TRAINER_LYLE ===
 Name: LYLE
