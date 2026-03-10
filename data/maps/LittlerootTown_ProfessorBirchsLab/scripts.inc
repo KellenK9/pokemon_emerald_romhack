@@ -507,6 +507,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GivePokedex::
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex, MSGBOX_DEFAULT
 	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex, MSGBOX_DEFAULT
+	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokenav
 	closemessage
 	applymovement LOCALID_BIRCHS_LAB_RIVAL, LittlerootTown_ProfessorBirchsLab_Movement_RivalApproachPlayer
 	waitmovement 0
@@ -547,6 +548,14 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex::
 	special SetUnlockedPokedexFlags
 	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
 	setvar VAR_CABLE_CLUB_TUTORIAL_STATE, 1
+	return
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokenav::
+	playfanfare MUS_OBTAIN_ITEM
+	message LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokenav
+	waitfanfare
+	setflag DN_FLAG_DEXNAV_GET
+	setflag DN_FLAG_DETECTOR_MODE
 	return
 
 LittlerootTown_ProfessorBirchsLab_EventScript_PokemonAwait::
@@ -742,16 +751,27 @@ LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex:
 LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokedex:
 	.string "{PLAYER} received the POKéDEX!$"
 
+LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokenav:
+	.string "{PLAYER} received the POKéNAV!$"
+
 LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex:
 	.string "PROF. BIRCH: The POKéDEX is a high-tech\n"
 	.string "tool that automatically makes a record\l"
 	.string "of any POKéMON you meet or catch.\p"
-	.string "My kid, {RIVAL}, goes everywhere\n"
-	.string "with it.\p"
-	.string "Whenever my kid catches a rare POKéMON\n"
-	.string "and records its data in the POKéDEX,\l"
-	.string "why, {RIVAL} looks for me while I'm out\l"
-	.string "doing fieldwork, and shows me.$"
+	.string "Hmmm\p"
+	.string "Maybe I'll give you the upgraded\n"
+	.string "experimental version I've been\l"
+	.string "developing called the POKéNAV.\p"
+	.string "The POKéNAV will track which POKéMON\n"
+	.string "you've caught on each route and may\l"
+	.string "even help you track hidden POKéMON.\p"
+	.string "These hidden POKéMON are not native to\n"
+	.string "Hoenn but have made homes here after\l"
+	.string "being brought over from various regions.\p"
+	.string "If you see a POKéMON wiggling in the\n"
+	.string "tall grass, it may be a hidden POKéMON.\p"
+	.string "You should slowly creep towards them\n"
+	.string "by holding the A Button.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait:
 	.string "PROF. BIRCH: Countless POKéMON\n"
