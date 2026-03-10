@@ -4,7 +4,7 @@ Route102_Text_CalvinIntro:
 
 Route102_Text_CalvinDefeated:
 	.string "Arrgh, I lost…\n"
-	.string "I should have trained mine more…$"
+	.string "I guess fancy items aren't everything.$"
 
 Route102_Text_CalvinPostBattle:
 	.string "Listen, you. If you're strong,\n"
