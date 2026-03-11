@@ -289,7 +289,8 @@ Route101_Text_WildPokemonInTallGrass:
 	.string "I heard POKéMON from other regions have\n"
 	.string "migrated to Hoenn.\p"
 	.string "Some of them are so common they don't\n"
-	.string "have to hide and might attack you!$"
+	.string "remain hidden and might jump out and\l"
+	.string "attack you!$"
 
 Route101_Text_RouteSign:
 	.string "ROUTE 101\n"
