@@ -34,39 +34,39 @@
 #define SEARCHLEVEL50_MOVECHANCE        63
 #define SEARCHLEVEL100_MOVECHANCE       83
 // Chance of encountering Hidden Abilities at search levels
-#define SEARCHLEVEL0_ABILITYCHANCE      5
-#define SEARCHLEVEL5_ABILITYCHANCE      5
+#define SEARCHLEVEL0_ABILITYCHANCE      10
+#define SEARCHLEVEL5_ABILITYCHANCE      10
 #define SEARCHLEVEL10_ABILITYCHANCE     10
 #define SEARCHLEVEL25_ABILITYCHANCE     15
 #define SEARCHLEVEL50_ABILITYCHANCE     20
 #define SEARCHLEVEL100_ABILITYCHANCE    23
 // Chance of encountering held item
-#define SEARCHLEVEL0_ITEM               5
+#define SEARCHLEVEL0_ITEM               0
 #define SEARCHLEVEL5_ITEM               5
 #define SEARCHLEVEL10_ITEM              5
 #define SEARCHLEVEL25_ITEM              7
 #define SEARCHLEVEL50_ITEM              7
 #define SEARCHLEVEL100_ITEM             12
 // Chance of encountering one star potential
-#define SEARCHLEVEL0_ONESTAR            0
-#define SEARCHLEVEL5_ONESTAR            14
+#define SEARCHLEVEL0_ONESTAR            15
+#define SEARCHLEVEL5_ONESTAR            15
 #define SEARCHLEVEL10_ONESTAR           17
 #define SEARCHLEVEL25_ONESTAR           17
 #define SEARCHLEVEL50_ONESTAR           15
 #define SEARCHLEVEL100_ONESTAR          8
 // Chance of encountering two star potential
-#define SEARCHLEVEL0_TWOSTAR            0
-#define SEARCHLEVEL5_TWOSTAR            1
+#define SEARCHLEVEL0_TWOSTAR            8
+#define SEARCHLEVEL5_TWOSTAR            8
 #define SEARCHLEVEL10_TWOSTAR           9
 #define SEARCHLEVEL25_TWOSTAR           16
 #define SEARCHLEVEL50_TWOSTAR           17
 #define SEARCHLEVEL100_TWOSTAR          24
 // Chance of encountering three star potential
-#define SEARCHLEVEL0_THREESTAR          0
-#define SEARCHLEVEL5_THREESTAR          0
-#define SEARCHLEVEL10_THREESTAR         1
+#define SEARCHLEVEL0_THREESTAR          2
+#define SEARCHLEVEL5_THREESTAR          2
+#define SEARCHLEVEL10_THREESTAR         2
 #define SEARCHLEVEL25_THREESTAR         7
-#define SEARCHLEVEL50_THREESTAR         6
+#define SEARCHLEVEL50_THREESTAR         7
 #define SEARCHLEVEL100_THREESTAR        12
 
 #endif // GUARD_CONFIG_DEXNAV_H
