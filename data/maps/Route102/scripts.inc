@@ -2,7 +2,20 @@ Route102_MapScripts::
 	.byte 0
 
 Route102_EventScript_LittleBoy::
-	msgbox Route102_Text_ImNotVeryTall, MSGBOX_NPC
+	lock
+	faceplayer
+	goto_if_unset FLAG_RECEIVED_JABOCA_BERRY, Route102_EventScript_GiveJabocaBerry
+	msgbox Route102_Text_JabocaBerryExplanation, MSGBOX_DEFAULT
+	release
+	end
+
+Route102_EventScript_GiveJabocaBerry::
+	msgbox Route102_Text_GiveJabocaBerry, MSGBOX_DEFAULT
+	giveitem ITEM_JABOCA_BERRY
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	msgbox Route102_Text_JabocaBerryExplanation, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_JABOCA_BERRY
+	release
 	end
 
 Route102_EventScript_RouteSignOldale::
@@ -89,16 +102,21 @@ Route102_Text_LetsGoBack:
 	.string "{PLAYER}, thank you!\n"
 	.string "Let's go back to the GYM!$"
 
-Route102_Text_ImNotVeryTall:
-	.string "I'm…not very tall, so I sink right\n"
-	.string "into tall grass.\p"
-	.string "The grass goes up my nose and…\n"
-	.string "Fwafwafwafwafwa…\p"
-	.string "Fwatchoo!$"
+Route102_Text_GiveJabocaBerry:
+	.string "This strange berry fell from the sky\n"
+	.string "when a Starly flew overhead.\p"
+	.string "You can have it!$"
+
+Route102_Text_JabocaBerryExplanation:
+	.string "That berry I gave you hurts whatever\n"
+	.string "it touches\p"
+	.string "I don't want to hold it anymore.$"
 
 Route102_Text_CatchWholeBunchOfPokemon:
-	.string "I'm going to catch a whole bunch of\n"
-	.string "POKéMON!$"
+	.string "Apparently different regions have\n"
+	.string "different berries.\p"
+	.string "Sometimes migrating POKéMON and people\n"
+	.string "bring them to Hoenn.$"
 
 Route102_Text_RouteSignOldale:
 	.string "ROUTE 102\n"
