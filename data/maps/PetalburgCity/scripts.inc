@@ -726,10 +726,11 @@ PetalburgCity_Text_WaterReflection:
 	.string "What do you see reflected in your face?$"
 
 PetalburgCity_Text_FullPartyExplanation:
-	.string "Let's say you have six POKéMON.\n"
-	.string "If you catch another one…\p"
-	.string "It is automatically sent to a STORAGE\n"
-	.string "BOX over a PC connection.$"
+	.string "I'm friends with Professor Birch.\p"
+	.string "His DexNav really is something else.\p"
+	.string "It has a detector mode that shows grass\n"
+	.string "wiggling with special POKéMON, and a\l"
+	.string "search mode to find specific POKéMON.$"
 
 PetalburgCity_Text_GymSign:
 	.string "PETALBURG CITY POKéMON GYM\n"

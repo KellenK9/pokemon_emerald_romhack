@@ -11,18 +11,12 @@ PetalburgCity_House1_EventScript_Woman::
 
 PetalburgCity_House1_Text_TravelingIsWonderful:
 	.string "Traveling is wonderful!\p"
-	.string "When I was young, I roamed the seas\n"
-	.string "and the mountains!$"
+	.string "When I was young, I lived in a van\n"
+	.string "with Pico, my Poochyena.$"
 
 PetalburgCity_House1_Text_GoOnAdventure:
-	.string "Sigh…\p"
-	.string "I wish I could go on an adventure\n"
-	.string "with some POKéMON…\p"
-	.string "Crawl through some damp grass…\n"
-	.string "Climb rocky, rugged mountains…\p"
-	.string "Cross the raging seas…\n"
-	.string "Wander about in dark caves…\p"
-	.string "And, sometimes, even get a little\n"
-	.string "homesick…\p"
-	.string "It must be fabulous to travel!$"
+	.string "The Professor came through here\n"
+	.string "yesterday with a dozen Lotads.\p"
+	.string "He said he was trying to find a shiny\n"
+	.string "one with the DexNav's chaining feature.$"
 
