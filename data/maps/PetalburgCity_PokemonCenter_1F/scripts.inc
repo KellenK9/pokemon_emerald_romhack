@@ -53,14 +53,13 @@ PetalburgCity_PokemonCenter_1F_EventScript_SayMudkipType::
 	return
 
 PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem:
-	.string "That PC-based POKéMON Storage\n"
-	.string "System…\p"
-	.string "Whoever made it must be some kind\n"
-	.string "of a scientific wizard!$"
+	.string "My POKéMON can't get past level 15.\p"
+	.string "They don't respect me because I\n"
+	.string "don't have any gym badges.$"
 
 PetalburgCity_PokemonCenter_1F_Text_OranBerryRegainedHP:
-	.string "When my POKéMON ate an\n"
-	.string "ORAN BERRY, it regained HP!$"
+	.string "Nurse Joy is so pretty.\p"
+	.string "When I'm older we're gonna get married!$"
 
 PetalburgCity_PokemonCenter_1F_Text_ManyTypesOfPokemon:
 	.string "There are many types of POKéMON.\p"
