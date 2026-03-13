@@ -39,14 +39,12 @@ Route116_TunnelersRestHouse_Text_WeHadToStopBoring:
 	.string "around here doing nothing.$"
 
 Route116_TunnelersRestHouse_Text_ManDiggingHisWayToVerdanturf:
-	.string "There's a man digging his way to\n"
-	.string "VERDANTURF all by his lonesome.\l"
-	.string "He's desperate to get through.\p"
-	.string "He says that if he digs little by little\n"
-	.string "without using machines, he won't\l"
-	.string "disturb POKéMON, and he'll avoid\l"
-	.string "harming the natural environment.\p"
-	.string "I wonder if he made it through yet.$"
+	.string "RUSTURF TUNNEL is the home of many\n"
+	.string "Whismur.\p"
+	.string "Recently, rock POKéMON from other\n"
+	.string "regions have also settled there.\p"
+	.string "I wonder how that makes the\l"
+	.string "Whismur feel.$"
 
 Route116_TunnelersRestHouse_Text_GetToVerdanturfWithoutTunnel:
 	.string "To get to VERDANTURF without using\n"
