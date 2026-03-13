@@ -216,8 +216,11 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
+Poochyena @ Toxic Orb
+Ability: Quick Feet
 Level: 9
+- Bite
+- Tackle
 
 === TRAINER_MARCEL ===
 Name: MARCEL
@@ -10086,17 +10089,14 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Wurmple
-Level: 3
+Wurmple @ Oran Berry
+Level: 5
 
-Wurmple
-Level: 3
+Wurmple @ Lum Berry
+Level: 5
 
-Wurmple
-Level: 3
-
-Wurmple
-Level: 3
+Wurmple @ Occa Berry
+Level: 5
 
 === TRAINER_JOSE ===
 Name: JOSE
@@ -10166,9 +10166,15 @@ AI: Check Bad Move
 
 Nincada
 Level: 6
+- Sand Attack
+- Scratch
+- Mud Slap
 
-Nincada
+Volbeat
 Level: 6
+- Bug Bite
+- Confuse Ray
+- Spark
 
 === TRAINER_JAMES_2 ===
 Name: JAMES
@@ -11593,7 +11599,7 @@ Items: X Attack
 Double Battle: No
 AI: Check Bad Move
 
-Magikarp
+Magikarp @ Rindo Berry
 Level: 9
 - Tackle
 
