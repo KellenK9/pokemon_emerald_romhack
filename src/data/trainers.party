@@ -2287,7 +2287,7 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon @ Nugget
+Meowth @ Nugget
 Level: 7
 
 === TRAINER_MOLLIE ===
@@ -5700,13 +5700,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Magikarp
-Level: 5
-
-Magikarp
+Goldeen
 Level: 6
 
-Magikarp
+Carvanha
+Level: 6
+
+Barboach
 Level: 7
 
 === TRAINER_CLAUDE ===
@@ -7915,11 +7915,19 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Seedot
-Level: 6
+Lotad @ Oran Berry
+Ability: Swift Swim
+Level: 7
+- Rain Dance
+- Swift
+- Reflect
 
-Lotad
-Level: 6
+Lotad @ Lum Berry
+Ability: Rain Dish
+Level: 7
+- Bubble
+- Growl
+- Razor Leaf
 
 === TRAINER_MIU_AND_YUKI ===
 Name: MIU & YUKI
@@ -9906,6 +9914,7 @@ Class: Lass
 Pic: Lass
 Gender: Female
 Music: Female
+Items: Fresh Water
 Double Battle: No
 AI: Check Bad Move
 
