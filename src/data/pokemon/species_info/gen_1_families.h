@@ -12418,8 +12418,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sOnixTeachableLearnset,
         .eggMoveLearnset = sOnixEggMoveLearnset,
     #if P_GEN_2_CROSS_EVOS
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_STEELIX, CONDITIONS({IF_HOLD_ITEM, ITEM_METAL_COAT})},
-                                {EVO_ITEM, ITEM_METAL_COAT, SPECIES_STEELIX}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_METAL_COAT, SPECIES_STEELIX}),
     #endif
     },
 
