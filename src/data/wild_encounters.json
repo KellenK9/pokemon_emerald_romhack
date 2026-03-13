@@ -673,6 +673,26 @@
                 "species": "SPECIES_MAGIKARP"
               }
             ]
+          },
+          "hidden_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_IGGLYBUFF"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_IGGLYBUFF"
+              },
+              {
+                "min_level": 3,
+                "max_level": 3,
+                "species": "SPECIES_IGGLYBUFF"
+              }
+            ]
           }
         },
         {
@@ -1949,12 +1969,12 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_PINECO"
+                "species": "SPECIES_PICHU"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SLAKOTH"
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_PIKACHU"
               }
             ]
           },
