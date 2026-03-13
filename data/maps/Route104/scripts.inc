@@ -1012,10 +1012,8 @@ Route104_Text_ThrowBallAtWeakenedPokemon:
 	.string "poisoned, burned, or lulled to sleep.$"
 
 Route104_Text_OnlyThrowBallAtWildPokemon:
-	.string "You're a thief if you try to steal\n"
-	.string "someone else's POKéMON.\p"
-	.string "You should throw POKé BALLS only at\n"
-	.string "wild POKéMON.$"
+	.string "The Nest Ball works great on low level\n"
+	.string "POKéMON.$"
 
 Route104_Text_ImNotATrainer:
 	.string "Oh, no, I'm not a TRAINER.\p"
