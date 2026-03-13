@@ -5386,9 +5386,10 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
+Geodude @ Focus Sash
+Ability: Rock Head
 Level: 10
-- Tackle
+- Struggle
 
 === TRAINER_TOMMY ===
 Name: TOMMY
@@ -5399,11 +5400,8 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 8
-
-Geodude
-Level: 8
+Anorith @ Oran Berry
+Level: 9
 
 === TRAINER_JOEY ===
 Name: JOEY
@@ -9458,11 +9456,18 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 8
+Geodude @ Sitrus Berry
+Ability: Sturdy
+Level: 9
+- Tackle
+- Rock Tomb
 
-Geodude
-Level: 8
+Geodude @ Sitrus Berry
+Ability: Sturdy
+Level: 10
+- Tackle
+- Bulldoze
+- Rock Tomb
 
 === TRAINER_BRENDEN ===
 Name: BRENDEN

@@ -138,8 +138,8 @@ RustboroCity_Gym_Text_GymGuidePostVictory:
 	.string "That's got to feel awesome!$"
 
 RustboroCity_Gym_Text_JoshIntro:
-	.string "Don't take us GYM TRAINERS lightly!\n"
-	.string "I'll show you why we're better!$"
+	.string "My Geodude is one of a kind.\n"
+	.string "It doesn't know any moves.$"
 
 RustboroCity_Gym_Text_JoshDefeat:
 	.string "You were too good for me…$"
