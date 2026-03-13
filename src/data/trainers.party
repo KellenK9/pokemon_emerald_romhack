@@ -301,8 +301,12 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
+Poochyena @ Toxic Orb
+Ability: Quick Feet
 Level: 11
+- Bite
+- Tackle
+- Sand Attack
 
 === TRAINER_GRUNT_WEATHER_INST_1 ===
 Name: GRUNT
