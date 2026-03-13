@@ -10337,7 +10337,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sSlowpokeFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_SLOWBRO}
                             #if P_GEN_2_CROSS_EVOS
-                                ,{EVO_TRADE, 0, SPECIES_SLOWKING, CONDITIONS({IF_HOLD_ITEM, ITEM_KINGS_ROCK})},
                                 {EVO_ITEM, ITEM_KINGS_ROCK, SPECIES_SLOWKING}
                             #endif
                             ),
