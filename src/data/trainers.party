@@ -1911,6 +1911,9 @@ AI: Check Bad Move
 
 Zigzagoon @ Nugget
 Level: 7
+- Headbutt
+- Sand Attack
+- Baby-Doll Eyes
 
 === TRAINER_DAPHNE ===
 Name: DAPHNE
@@ -1966,8 +1969,9 @@ AI: Check Bad Move
 
 Zigzagoon @ Nugget
 Level: 11
-- Tackle
-- Tail Whip
+- Headbutt
+- Sand Attack
+- Baby-Doll Eyes
 
 === TRAINER_BRIANNA ===
 Name: BRIANNA
@@ -5364,10 +5368,10 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 5
+Zigzagoon @ Oran Berry
+Level: 6
 
-Seedot
+Seedot @ Oran Berry
 Level: 7
 
 === TRAINER_JOSH ===
@@ -11585,11 +11589,13 @@ Class: Fisherman
 Pic: Fisherman
 Gender: Male
 Music: Hiker
+Items: X Attack
 Double Battle: No
 AI: Check Bad Move
 
 Magikarp
 Level: 9
+- Tackle
 
 === TRAINER_HAILEY ===
 Name: HAILEY
