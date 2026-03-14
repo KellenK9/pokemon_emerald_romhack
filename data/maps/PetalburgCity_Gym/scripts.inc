@@ -183,6 +183,7 @@ PetalburgCity_Gym_EventScript_BeginWallyTutorial::
 	setflag I_EXP_SHARE_FLAG
 	giveitem ITEM_EXP_SHARE
 	msgbox PetalburgCity_Gym_Text_DadGoCollectBadges, MSGBOX_DEFAULT
+	closemessage
 	setflag FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM
 	setvar VAR_PETALBURG_GYM_STATE, 2
 	setvar VAR_PETALBURG_CITY_STATE, 2
@@ -1162,8 +1163,8 @@ PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon:
 	.string "so I wanted to take a POKéMON along.\p"
 	.string "But I've never caught a POKéMON before.\p"
 	.string "It seems impossible to catch one if\n"
-	.string "you don't already have a POKéMON to\l"
-	.string "weaken it with.$"
+	.string "you don't already have a POKéMON of\l"
+	.string "your own to weaken it with.$"
 
 PetalburgCity_Gym_Text_DadHmISee:
 	.string "DAD: Hm. I see.$"
@@ -1174,7 +1175,7 @@ PetalburgCity_Gym_Text_DadPlayerGoWithWally:
 	.string "Normally I'd ask you to teach Wally\n"
 	.string "how to catch a POKéMON,\l"
 	.string "but that seems like a hassle.\p"
-	.string "I know!.\p"
+	.string "I know!\p"
 	.string "I have a spare RALTS I can give WALLY.$"
 
 PetalburgCity_Gym_Text_DadGiveExpShare:

@@ -954,8 +954,7 @@ LittlerootTown_Text_ComeHomeIfAnythingHappens:
 
 LittlerootTown_Text_CanUsePCToStoreItems:
 	.string "{RIVAL} is super strong!\p"
-	.string "Make sure to train your POKéMON before\n"
-	.string "battling them!$"
+	.string "Though you seem pretty strong too.$"
 
 LittlerootTown_Text_BirchSpendsDaysInLab:
 	.string "Most players don't start their Nuzlocke\n"

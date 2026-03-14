@@ -770,8 +770,8 @@ LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex:
 	.string "being brought over from other regions.\p"
 	.string "If you see a POKéMON wiggling in the\n"
 	.string "tall grass, it may be a hidden POKéMON.\p"
-	.string "You should slowly creep towards them\n"
-	.string "by holding the A Button.$"
+	.string "You should slowly creep towards\n"
+	.string "wiggling grass by holding the A Button.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait:
 	.string "PROF. BIRCH: Countless POKéMON\n"
