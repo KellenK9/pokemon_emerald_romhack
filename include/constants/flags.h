@@ -52,7 +52,7 @@
 #else
 
 #define DN_FLAG_DEXNAV_GET   0x20 // DexNav: Show in start menu
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
+#define I_EXP_SHARE_FLAG     0x21 // Player obtains the Exp Share key item used in gens 6+
 #define FLAG_UNUSED_0x022    0x22 // Unused Flag
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
