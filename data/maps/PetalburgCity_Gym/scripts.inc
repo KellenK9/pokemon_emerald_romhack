@@ -162,7 +162,6 @@ PetalburgCity_Gym_EventScript_BeginWallyTutorial::
 	call_if_eq VAR_0x8008, 3, PetalburgCity_Gym_EventScript_NormanAddressWallyEast
 	msgbox PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon, MSGBOX_DEFAULT
 	msgbox PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall, MSGBOX_DEFAULT
-	msgbox PetalburgCity_Gym_Text_WallyOhWowThankYou, MSGBOX_DEFAULT
 	call_if_eq VAR_0x8008, 0, PetalburgCity_Gym_EventScript_NormanFaceDoorSouth
 	call_if_eq VAR_0x8008, 1, PetalburgCity_Gym_EventScript_NormanFaceDoorNorth
 	call_if_eq VAR_0x8008, 2, PetalburgCity_Gym_EventScript_NormanFaceDoorWest
@@ -180,14 +179,15 @@ PetalburgCity_Gym_EventScript_BeginWallyTutorial::
 	call_if_eq VAR_0x8008, 2, PetalburgCity_Gym_EventScript_ExitGymWithWallyWest
 	call_if_eq VAR_0x8008, 3, PetalburgCity_Gym_EventScript_ExitGymWithWallyEast
 	removeobject LOCALID_PETALBURG_GYM_WALLY
+	msgbox PetalburgCity_Gym_Text_DadGiveExpShare, MSGBOX_DEFAULT
+	setflag I_EXP_SHARE_FLAG
+	giveitem ITEM_EXP_SHARE
+	msgbox PetalburgCity_Gym_Text_DadGoCollectBadges, MSGBOX_DEFAULT
 	setflag FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM
-	setvar VAR_PETALBURG_GYM_STATE, 1
+	setvar VAR_PETALBURG_GYM_STATE, 2
 	setvar VAR_PETALBURG_CITY_STATE, 2
-	clearflag FLAG_HIDE_PETALBURG_CITY_WALLY
-	clearflag FLAG_HIDE_PETALBURG_GYM_WALLY
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL
 	special InitBirchState
-	warp MAP_PETALBURG_CITY, 15, 8
 	waitstate
 	release
 	end
@@ -216,25 +216,21 @@ PetalburgCity_Gym_EventScript_WallyArriveWestEast::
 PetalburgCity_Gym_EventScript_ExitGymWithWallySouth::
 	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_WalkInPlaceFasterDown
 	applymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_Movement_WallyExitSouthWest
-	applymovement LOCALID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallySouth
 	waitmovement 0
 	return
 
 PetalburgCity_Gym_EventScript_ExitGymWithWallyNorth::
 	applymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_Movement_WallyExitNorth
-	applymovement LOCALID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallyNorth
 	waitmovement 0
 	return
 
 PetalburgCity_Gym_EventScript_ExitGymWithWallyWest::
 	applymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_Movement_WallyExitSouthWest
-	applymovement LOCALID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallyWest
 	waitmovement 0
 	return
 
 PetalburgCity_Gym_EventScript_ExitGymWithWallyEast::
 	applymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_Movement_WallyExitEast
-	applymovement LOCALID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallyEast
 	waitmovement 0
 	return
 
@@ -1164,8 +1160,10 @@ PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon:
 	.string "relatives in VERDANTURF TOWN.\p"
 	.string "I thought I would be lonely by myself,\n"
 	.string "so I wanted to take a POKéMON along.\p"
-	.string "But I've never caught a POKéMON before.\n"
-	.string "I don't know how…$"
+	.string "But I've never caught a POKéMON before.\p"
+	.string "It seems impossible to catch one if\n"
+	.string "you don't already have a POKéMON to\l"
+	.string "weaken it with.$"
 
 PetalburgCity_Gym_Text_DadHmISee:
 	.string "DAD: Hm. I see.$"
@@ -1173,27 +1171,30 @@ PetalburgCity_Gym_Text_DadHmISee:
 PetalburgCity_Gym_Text_DadPlayerGoWithWally:
 	.string "DAD: {PLAYER}, you heard that,\n"
 	.string "right?\p"
-	.string "Go with WALLY and make sure that he\n"
-	.string "safely catches a POKéMON.$"
+	.string "Normally I'd ask you to teach Wally\n"
+	.string "how to catch a POKéMON,\l"
+	.string "but that seems like a hassle.\p"
+	.string "I know!.\p"
+	.string "I have a spare RALTS I can give WALLY.$"
+
+PetalburgCity_Gym_Text_DadGiveExpShare:
+	.string "DAD: I have a gift for you too son.$"
 
 PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon:
-	.string "WALLY, here, I'll loan you my POKéMON.\p"
-	.string "WALLY received a ZIGZAGOON!$"
+	.string "WALLY, here, I'll give you a RALTS.\p"
+	.string "WALLY received a RALTS!$"
 
 PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall:
 	.string "WALLY: Oh, wow!\n"
-	.string "A POKéMON!\p"
-	.string "DAD: Hm. I'll give you a POKé BALL, too.\n"
-	.string "Go for it!\p"
-	.string "WALLY received a POKé BALL!$"
+	.string "A POKéMON! Thanks!$"
 
 PetalburgCity_Gym_Text_WallyOhWowThankYou:
 	.string "WALLY: Oh, wow!\n"
 	.string "Thank you!$"
 
 PetalburgCity_Gym_Text_WouldYouReallyComeWithMe:
-	.string "{PLAYER}… Would you really come\n"
-	.string "with me?$"
+	.string "It was nice to meet you {PLAYER}.\n"
+	.string "Your dad is so cool!$"
 
 PetalburgCity_Gym_Text_DadSoDidItWorkOut:
 	.string "DAD: So, did it work out?$"
@@ -1212,6 +1213,14 @@ PetalburgCity_Gym_Text_WallyThankYouBye:
 	.string "Bye, {PLAYER}!$"
 
 PetalburgCity_Gym_Text_DadGoCollectBadges:
+	.string "That EXP. SHARE is the newest model\n"
+	.string "straight from Kalos.\p"
+	.string "It automatically shares gained exp\n"
+	.string "across your entire party.\p"
+	.string "It can also be turned off from your\n"
+	.string "bag if you want a challenge.\p"
+	.string "I hope it helps you along in your\n"
+	.string "adventure.\p"
 	.string "DAD: Now…\p"
 	.string "{PLAYER}, if you want to become a\n"
 	.string "strong TRAINER, here's my advice.\p"
