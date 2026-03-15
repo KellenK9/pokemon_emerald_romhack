@@ -1452,21 +1452,21 @@
             "mons": [
               {
                 "min_level": 6,
-                "max_level": 6,
+                "max_level": 8,
                 "species": "SPECIES_POOCHYENA"
               },
               {
                 "min_level": 6,
-                "max_level": 6,
+                "max_level": 8,
                 "species": "SPECIES_WHISMUR"
               },
               {
                 "min_level": 6,
-                "max_level": 6,
+                "max_level": 8,
                 "species": "SPECIES_NINCADA"
               },
               {
-                "min_level": 7,
+                "min_level": 6,
                 "max_level": 7,
                 "species": "SPECIES_ABRA"
               },
@@ -1477,38 +1477,58 @@
               },
               {
                 "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_TAILLOW"
+              },
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_PIDGEY"
+              },
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_STARLY"
+              },
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_MANKEY"
+              },
+              {
+                "min_level": 6,
+                "max_level": 7,
+                "species": "SPECIES_SKITTY"
+              },
+              {
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_SKITTY"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_SKITTY"
+              }
+            ]
+          },
+          "hidden_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 6,
                 "max_level": 6,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_WYNAUT"
               },
               {
                 "min_level": 7,
                 "max_level": 7,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_WYNAUT"
               },
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_TAILLOW"
-              },
-              {
-                "min_level": 7,
-                "max_level": 8,
-                "species": "SPECIES_POOCHYENA"
-              },
-              {
-                "min_level": 7,
-                "max_level": 8,
-                "species": "SPECIES_SKITTY"
-              },
-              {
-                "min_level": 7,
-                "max_level": 7,
-                "species": "SPECIES_SKITTY"
-              },
-              {
-                "min_level": 8,
-                "max_level": 8,
-                "species": "SPECIES_SKITTY"
+                "species": "SPECIES_WYNAUT"
               }
             ]
           }
