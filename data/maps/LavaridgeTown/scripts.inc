@@ -242,7 +242,7 @@ LavaridgeTown_EventScript_EggWoman::
 	playfanfare MUS_OBTAIN_ITEM
 	message LavaridgeTown_Text_ReceivedTheEgg
 	waitfanfare
-	giveegg SPECIES_WYNAUT
+	giveegg SPECIES_POIPOLE
 	release
 	end
 
@@ -319,9 +319,10 @@ LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad:
 
 LavaridgeTown_Text_HaveEggWillYouTakeIt:
 	.string "I have here an EGG.\p"
-	.string "I'd hoped to hatch it by covering it in\n"
-	.string "hot sand by the hot springs.\l"
-	.string "But that doesn't seem to be enough…\p"
+	.string "I received it as a gift from my lover\n"
+	.string "in Alola.\p"
+	.string "He said it came from space.\n"
+	.string "What a jokester!\p"
 	.string "I've heard it would be best if it were\n"
 	.string "kept together with POKéMON and\l"
 	.string "carried about.\p"
