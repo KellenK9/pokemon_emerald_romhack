@@ -279,6 +279,9 @@ NewMauville_Inside_Text_ScreenGlowing:
 NewMauville_Inside_Text_RotomDeclined:
 	.string "It feels like something is watching you.$"
 
+NewMauville_Inside_Text_RotomEncounter:
+	.string "A POKéMON jumped out and attacked you!$"
+
 NewMauville_Inside_Text_GeneratorRadiatingHeat:
 	.string "The generator is radiating heat that\n"
 	.string "can be felt even at a distance.\p"
