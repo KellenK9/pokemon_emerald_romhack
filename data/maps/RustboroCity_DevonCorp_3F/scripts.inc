@@ -254,8 +254,8 @@ RustboroCity_DevonCorp_3F_Text_ExplainExpShare:
 	.string "you'll recieve twice the reward money!.\p"
 	.string "It was integral in making Devon Corp\n"
 	.string "into the lucrative business it is now.\p"
-	.string "I don't need the extra cash so I hope\n"
-	.string "it leads you to prosperous ends.$"
+	.string "I don't battle much anymore so maybe\n"
+	.string "it can help you now instead.$"
 
 RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends:
 	.string "MR. STONE: Since my youth, I've immersed\n"
