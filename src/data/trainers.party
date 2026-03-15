@@ -4728,10 +4728,11 @@ Class: School Kid
 Pic: School Kid F
 Gender: Female
 Music: Girl
+Items: Super Potion
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
+Shroomish @ Big Root
 Level: 9
 
 === TRAINER_GEORGIA ===
@@ -5415,7 +5416,10 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Machop
+Machop @ Oran Berry
+Level: 9
+
+Mankey @ Oran Berry
 Level: 9
 
 === TRAINER_BEN ===
@@ -10136,11 +10140,14 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Wurmple
+Wurmple @ Jaboca Berry
 Level: 8
+- Poison Sting
+- Bug Bite
 
-Nincada
+Nincada @ Focus Sash
 Level: 8
+- Fury Swipes
 
 === TRAINER_DOUG ===
 Name: DOUG
@@ -10361,8 +10368,9 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 8
+Geodude @ Focus Sash
+Level: 9
+- Rock Slide
 
 === TRAINER_ERIC ===
 Name: ERIC
@@ -12420,11 +12428,17 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
+Geodude @ Assault Vest
 Level: 8
+- Rollout
+- Tackle
+- Dig
 
-Geodude
+Geodude @ Assault Vest
 Level: 8
+- Rollout
+- Tackle
+- Dig
 
 === TRAINER_JOHNSON ===
 Name: JOHNSON
@@ -12435,11 +12449,15 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
+Lotad @ Assault Vest
 Level: 8
+- Bubble
+- Razor Leaf
 
-Lotad
+Shroomish @ Rowap Berry
 Level: 8
+- Razor Leaf
+- Aromatherapy
 
 === TRAINER_MELINA ===
 Name: MELINA
