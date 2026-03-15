@@ -4,7 +4,7 @@ MauvilleCity_BikeShop_MapScripts::
 MauvilleCity_BikeShop_EventScript_Rydel::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_BIKE, MauvilleCity_BikeShop_EventScript_AskSwitchBikes
+	goto_if_set FLAG_RECEIVED_BIKE, message MauvilleCity_BikeShop_Text_EnjoyYourBikes
 	goto_if_set FLAG_DECLINED_BIKE, MauvilleCity_BikeShop_EventScript_SkipGreeting
 	msgbox MauvilleCity_BikeShop_Text_RydelGreeting, MSGBOX_DEFAULT
 	msgbox MauvilleCity_BikeShop_Text_DidYouComeFromFarAway, MSGBOX_YESNO
@@ -20,11 +20,12 @@ MauvilleCity_BikeShop_EventScript_SkipGreeting::
 
 MauvilleCity_BikeShop_EventScript_ChooseBike::
 	message MauvilleCity_BikeShop_Text_ExplainBikesChooseWhichOne
-	waitmessage
-	multichoice 21, 8, MULTI_BIKE, TRUE
-	switch VAR_RESULT
-	case 0, MauvilleCity_BikeShop_EventScript_GetMachBike
-	case 1, MauvilleCity_BikeShop_EventScript_GetAcroBike
+	giveitem ITEM_MACH_BIKE
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	giveitem ITEM_ACRO_BIKE
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	message MauvilleCity_BikeShop_Text_EnjoyYourBikes
+	release
 	end
 
 MauvilleCity_BikeShop_EventScript_NotFar::
@@ -212,9 +213,8 @@ MauvilleCity_BikeShop_Text_ExplainBikesChooseWhichOne:
 	.string "to feel the wind with their bodies!\p"
 	.string "And an ACRO BIKE is for those who\n"
 	.string "prefer technical rides!\p"
-	.string "I'm a real sweetheart, so you can\n"
-	.string "have whichever one you like!\p"
-	.string "Which one will you choose?$"
+	.string "I'm feeling extra generous today,\n"
+	.string "so you can have both!$"
 
 MauvilleCity_BikeShop_Text_ChoseMachBike:
 	.string "{PLAYER} chose the MACH BIKE.$"
@@ -320,3 +320,5 @@ MauvilleCity_BikeShop_Text_Jumps:
 	.string "change directions while jumping.\p"
 	.string "Want to read a different page?$"
 
+MauvilleCity_BikeShop_Text_EnjoyYourBikes:
+	.string "Enjoy your bikes!$"
