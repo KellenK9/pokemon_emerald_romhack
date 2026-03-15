@@ -245,6 +245,39 @@ NewMauville_Inside_EventScript_DefeatedVoltorb3::
 	goto Common_EventScript_RemoveStaticPokemon
 	end
 
+NewMauville_Inside_EventScript_RotomApproach::
+	msgbox NewMauville_Inside_Text_ScreenGlowing, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, NewMauville_Inside_EventScript_RotomTouched
+	goto_if_eq VAR_RESULT, NO, NewMauville_Inside_EventScript_RotomDeclined
+	end
+
+NewMauville_Inside_EventScript_RotomTouched::
+	msgbox NewMauville_Inside_Text_RotomEncounter, MSGBOX_DEFAULT
+	setflag FLAG_ROTOM_ENCOUNTERED
+	setwildbattle SPECIES_ROTOM, 30
+	waitse
+	playmoncry SPECIES_ROTOM, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	release
+	end
+
+NewMauville_Inside_EventScript_RotomDeclined::
+	msgbox NewMauville_Inside_Text_RotomDeclined, MSGBOX_DEFAULT
+	release
+	end
+
+NewMauville_Inside_Text_ScreenGlowing:
+	.string "The screen gives off an eerie glow\n"
+	.string "though it seems like a projection.\p"
+	.string "Will you reach through the screen?$"
+
+NewMauville_Inside_Text_RotomDeclined:
+	.string "It feels like something is watching you.$"
+
 NewMauville_Inside_Text_GeneratorRadiatingHeat:
 	.string "The generator is radiating heat that\n"
 	.string "can be felt even at a distance.\p"
