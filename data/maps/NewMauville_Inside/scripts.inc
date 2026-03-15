@@ -255,6 +255,7 @@ NewMauville_Inside_EventScript_RotomTouched::
 	msgbox NewMauville_Inside_Text_RotomEncounter, MSGBOX_DEFAULT
 	setflag FLAG_ROTOM_ENCOUNTERED
 	setwildbattle SPECIES_ROTOM, 30
+	special SetRotomWildMoves
 	waitse
 	playmoncry SPECIES_ROTOM, CRY_MODE_ENCOUNTER
 	delay 40

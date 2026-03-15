@@ -177,6 +177,14 @@ void ScriptSetMonMoveSlot(u8 monIndex, enum Move move, u8 slot)
     SetMonMoveSlot(&gPlayerParty[monIndex], move, slot);
 }
 
+void SetRotomWildMoves(void)
+{
+    SetMonMoveSlot(&gEnemyParty[0], MOVE_SHOCK_WAVE, 0);
+    SetMonMoveSlot(&gEnemyParty[0], MOVE_NIGHT_SHADE, 1);
+    SetMonMoveSlot(&gEnemyParty[0], MOVE_DOUBLE_TEAM, 2);
+    SetMonMoveSlot(&gEnemyParty[0], MOVE_CONFUSE_RAY, 3);
+}
+
 // Note: When control returns to the event script, gSpecialVar_Result will be
 // TRUE if the party selection was successful.
 void ChooseHalfPartyForBattle(void)
