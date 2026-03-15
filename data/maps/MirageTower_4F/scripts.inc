@@ -44,6 +44,7 @@ MirageTower_4F_EventScript_LeaveClawFossil::
 	end
 
 MirageTower_4F_EventScript_CollapseMirageTower::
+	setvar VAR_FOSSIL_MANIAC_STATE, 1
 	setvar VAR_0x8004, 1   @ vertical pan
 	setvar VAR_0x8005, 1   @ horizontal pan
 	setvar VAR_0x8006, 32  @ num shakes
