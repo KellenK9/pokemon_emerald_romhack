@@ -5741,14 +5741,22 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Magikarp
+Magikarp @ Focus Sash
 Level: 10
+- Hydro Pump
 
-Tentacool
-Level: 7
-
-Magikarp
+Tentacool @ Oran Berry
 Level: 10
+- MOVE_WATER_GUN
+- MOVE_ACID
+- MOVE_WRAP
+- MOVE_SUPERSONIC
+
+Goldeen @ Oran Berry
+Level: 10
+- Peck
+- Water Pulse
+- Supersonic
 
 === TRAINER_NED ===
 Name: NED
@@ -5759,8 +5767,12 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
-Level: 11
+Tentacool @ Lum Berry
+Level: 12
+- MOVE_WATER_GUN
+- MOVE_ACID
+- MOVE_WRAP
+- MOVE_SUPERSONIC
 
 === TRAINER_DALE ===
 Name: DALE

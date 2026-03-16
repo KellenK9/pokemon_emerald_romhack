@@ -534,8 +534,8 @@ Route105_Text_JosuePostBattle:
 	.string "match than the sea.$"
 
 Route106_Text_ElliotIntro:
-	.string "Which do you prefer, fishing in the\n"
-	.string "sea or a stream?$"
+	.string "Magikarp can only learn five moves.\n"
+	.string "Only one of them is good.$"
 
 Route106_Text_ElliotDefeated:
 	.string "Like in deep-sea fishing, I lost\n"
