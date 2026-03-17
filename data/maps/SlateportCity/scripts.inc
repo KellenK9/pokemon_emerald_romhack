@@ -923,8 +923,8 @@ SlateportCity_EventScript_BerryCrushRankingsSign::
 	end
 
 SlateportCity_Text_EnergyGuruSellWhatYouNeed:
-	.string "I'm the MINT GURU! I'll go for it and\n"
-	.string "sell you what you need!$"
+	.string "I'm the MINT GURU! I sell only the most\n"
+	.string "popular mints. Handpicked!$"
 
 SlateportCity_Text_OhYourPokemon:
 	.string "Oh?\n"
