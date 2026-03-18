@@ -4391,30 +4391,41 @@ Class: Leader
 Pic: Leader Brawly
 Gender: Male
 Music: Male
-Items: Super Potion / Super Potion
+Items: Moomoo Milk / Moomoo Milk
 Double Battle: No
 AI: Basic Trainer
 
-Machop
-Level: 16
+Machop @ Toxic Orb
+Level: 17
+Ability: Guts
 - Karate Chop
 - Low Kick
-- Seismic Toss
+- Knock Off
 - Bulk Up
 
-Meditite
-Level: 16
+Meditite @ Eviolite
+Level: 17
+Ability: Pure Power
 - Focus Punch
 - Light Screen
 - Reflect
 - Bulk Up
 
-Makuhita @ Sitrus Berry
-Level: 19
+Makuhita @ Eviolite
+Level: 18
+Ability: Thick Fat
 - Arm Thrust
 - Vital Throw
 - Reversal
 - Bulk Up
+
+Breloom @ Sitrus Berry
+Level: 19
+Ability: Technician
+- Spore
+- Force Palm
+- Bullet Seed
+- Leech Seed
 
 === TRAINER_WATTSON_1 ===
 Name: WATTSON
