@@ -53,7 +53,8 @@
     F(SKILL_SWAP) \
     F(SNATCH) \
     F(OVERHEAT) \
-    F(KNOCK_OFF)
+    F(KNOCK_OFF) \
+    F(STEALTH_ROCK)
 
 #define FOREACH_HM(F) \
     F(CUT) \

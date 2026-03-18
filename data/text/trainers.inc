@@ -4779,6 +4779,14 @@ Route134_Text_HudsonPostBattle:
 	.string "My buddy's a timid fellow, so I'm\n"
 	.string "worried about him.$"
 
+AlteringCave_Text_BrockIntro:
+	.string "I'm visiting Hoenn to study the rock\n"
+	.string "type POKéMON here.$"
+
+AlteringCave_Text_BrockDefeated:
+	.string "How could I lose…\n"
+	.string "Nurse Joy was be so disappointed$"
+
 VSSeeker_Text_BatteryNotChargedNeedXSteps::
 	.string "The battery isn't charged enough.\p"
 	.string "No. of steps required to fully\n"
