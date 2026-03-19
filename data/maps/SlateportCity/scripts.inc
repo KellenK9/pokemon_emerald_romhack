@@ -125,7 +125,7 @@ SlateportCity_EventScript_EnergyGuru::
 
 	.align 2
 SlateportCity_Pokemart_EnergyGuru:
-	.2byte ITEM_ADAMENT_MINT
+	.2byte ITEM_ADAMANT_MINT
 	.2byte ITEM_BOLD_MINT
 	.2byte ITEM_IMPISH_MINT
 	.2byte ITEM_MODEST_MINT
