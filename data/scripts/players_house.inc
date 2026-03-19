@@ -364,6 +364,7 @@ PlayersHouse_1F_EventScript_HealParty::
 
 PlayersHouse_1F_EventScript_DidYouMeetProfBirch::
 	msgbox PlayersHouse_1F_Text_DidYouMeetProfBirch, MSGBOX_DEFAULT
+	setvar VAR_LITTLEROOT_TOWN_STATE, 1
 	release
 	end
 

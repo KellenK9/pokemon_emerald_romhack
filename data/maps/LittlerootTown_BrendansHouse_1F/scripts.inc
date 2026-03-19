@@ -331,7 +331,10 @@ PlayersHouse_1F_Text_SeeYouHoney:
 
 PlayersHouse_1F_Text_DidYouMeetProfBirch:
 	.string "MOM: Did you introduce yourself to\n"
-	.string "PROF. BIRCH?$"
+	.string "PROF. BIRCH?\p"
+	.string "He's normally in his lab but I thought\n"
+	.string "I heard him yelling outside.\l"
+	.string "Head north to check on him.$"
 
 PlayersHouse_1F_Text_YouShouldRestABit:
 	.string "MOM: How are you doing, {PLAYER}?\n"
