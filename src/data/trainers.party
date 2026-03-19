@@ -2910,11 +2910,17 @@ Class: Black Belt
 Pic: Black Belt
 Gender: Male
 Music: Intense
+Items: Super Potion
 Double Battle: No
 AI: Check Bad Move
 
-Machop
-Level: 13
+Machop @ Toxic Orb
+Level: 15
+Ability: Guts
+- Karate Chop
+- Low Kick
+- Knock Off
+- Bulk Up
 
 === TRAINER_HITOSHI ===
 Name: HITOSHI
@@ -7116,8 +7122,13 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Meditite
-Level: 13
+Heracross
+Level: 16
+Ability: Swarm
+- Pin Missile
+- Aerial Ace
+- Brick Break
+- Knock Off
 
 === TRAINER_LAURA ===
 Name: LAURA
@@ -7129,7 +7140,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Meditite
-Level: 13
+Level: 15
+Ability: Pure Power
+- Focus Punch
+- Light Screen
+- Reflect
+- Bulk Up
 
 === TRAINER_CYNDY_1 ===
 Name: CYNDY
@@ -9561,8 +9577,13 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Machop
-Level: 13
+Machop @ Eviolite
+Level: 15
+Ability: Steadfast
+- Brutal Swing
+- Fake Out
+- Bulldoze
+- Low Sweep
 
 === TRAINER_LILITH ===
 Name: LILITH
@@ -9573,8 +9594,13 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Meditite
-Level: 13
+Meditite @ Eviolite
+Level: 15
+Ability: Telepathy
+- Swift
+- Fake Out
+- Light Screen
+- Reflect
 
 === TRAINER_CRISTIAN ===
 Name: CRISTIAN
@@ -9582,11 +9608,17 @@ Class: Black Belt
 Pic: Black Belt
 Gender: Male
 Music: Intense
+Items: Full Heal
 Double Battle: No
 AI: Check Bad Move
 
-Makuhita
-Level: 13
+Makuhita @ Air Balloon
+Level: 15
+Ability: Sheer Force
+- Rock Smash
+- Body Slam
+- Bulk Up
+- Knock Off
 
 === TRAINER_SYLVIA ===
 Name: SYLVIA
