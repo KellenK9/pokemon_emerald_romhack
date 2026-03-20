@@ -190,7 +190,7 @@ PetalburgCity_Gym_EventScript_BeginWallyTutorial::
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL
 	special InitBirchState
 	waitstate
-	release
+	releaseall
 	end
 
 PetalburgCity_Gym_EventScript_WallyArriveSouth::
