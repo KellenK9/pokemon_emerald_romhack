@@ -291,8 +291,9 @@ Route103_Text_MayRoute103Pokemon:
 	.string "on ROUTE 103 include…$"
 
 Route103_Text_MayLetsBattle:
-	.string "Oh, hi, {PLAYER}{KUN}!\p"
-	.string "…Oh, I see, my dad gave you\n"
+	.string "Oh, hi, you must be {PLAYER}{KUN}!\p"
+	.string "My dad said you were moving in next\n"
+	.string "door and I see he gave you\l"
 	.string "a POKéMON as a gift.\p"
 	.string "Since we're here, let's have a quick\n"
 	.string "battle!\p"
@@ -318,8 +319,9 @@ Route103_Text_BrendanRoute103Pokemon:
 	.string "that one that live on ROUTE 103…$"
 
 Route103_Text_BrendanLetsBattle:
-	.string "Hey, it's {PLAYER}!\p"
-	.string "…Oh, yeah, Dad gave you a POKéMON.\p"
+	.string "Hey, you must be {PLAYER}!\p"
+	.string "My dad said you were moving in next\n"
+	.string "door and I see he gave you a POKéMON.\p"
 	.string "Since we're here, how about a little\n"
 	.string "battle?\p"
 	.string "I'll teach you what being a TRAINER's\n"
