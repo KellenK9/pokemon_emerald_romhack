@@ -960,7 +960,7 @@ void ChooseStarter(void)
 static void CB2_GiveStarter(void)
 {
     u16 starterMon;
-    u8 metLocation = MAPSEC_PETALBURG_CITY;
+    u8 metLocation = MAPSEC_LITTLEROOT_TOWN;
 
     *GetVarPointer(VAR_STARTER_MON) = gSpecialVar_Result;
     starterMon = GetStarterPokemon(gSpecialVar_Result);
