@@ -141,6 +141,7 @@ PlayersHouse_2F_Movement_MomExitsFemale:
 
 PlayersHouse_1F_EventScript_SetWatchedBroadcast::
 	setvar VAR_LITTLEROOT_INTRO_STATE, 7
+	setvar VAR_LITTLEROOT_TOWN_STATE, 1
 	releaseall
 	end
 
@@ -364,7 +365,6 @@ PlayersHouse_1F_EventScript_HealParty::
 
 PlayersHouse_1F_EventScript_DidYouMeetProfBirch::
 	msgbox PlayersHouse_1F_Text_DidYouMeetProfBirch, MSGBOX_DEFAULT
-	setvar VAR_LITTLEROOT_TOWN_STATE, 1
 	release
 	end
 

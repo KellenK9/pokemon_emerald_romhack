@@ -324,7 +324,10 @@ PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor:
 	.string "One of DAD's friends lives in town.\p"
 	.string "PROF. BIRCH is his name.\p"
 	.string "He lives right next door, so you should\n"
-	.string "go over and introduce yourself.$"
+	.string "go over and introduce yourself.\p"
+	.string "He's normally in his lab but I thought\n"
+	.string "I heard him yelling outside.\l"
+	.string "Head north to check on him.$"
 
 PlayersHouse_1F_Text_SeeYouHoney:
 	.string "MOM: See you, honey!$"
