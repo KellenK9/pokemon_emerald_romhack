@@ -946,7 +946,7 @@
             "mons": [
               {
                 "min_level": 20,
-                "max_level": 20,
+                "max_level": 21,
                 "species": "SPECIES_SANDSHREW"
               },
               {
@@ -955,9 +955,9 @@
                 "species": "SPECIES_TRAPINCH"
               },
               {
-                "min_level": 21,
+                "min_level": 19,
                 "max_level": 21,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_SANDILE"
               },
               {
                 "min_level": 21,
@@ -982,7 +982,7 @@
               {
                 "min_level": 19,
                 "max_level": 19,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_CACNEA"
               },
               {
                 "min_level": 20,
@@ -995,8 +995,8 @@
                 "species": "SPECIES_CACNEA"
               },
               {
-                "min_level": 22,
-                "max_level": 22,
+                "min_level": 21,
+                "max_level": 21,
                 "species": "SPECIES_CACNEA"
               },
               {
@@ -1118,6 +1118,26 @@
                 "min_level": 40,
                 "max_level": 45,
                 "species": "SPECIES_BARBOACH"
+              }
+            ]
+          },
+          "hidden_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 19,
+                "max_level": 19,
+                "species": "SPECIES_UNOWN"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_UNOWN_K"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_UNOWN_W"
               }
             ]
           }

@@ -7556,7 +7556,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_CACNEA
     [SPECIES_CACNEA] =
     {
-        .baseHP        = 50,
+        .baseHP        = 70,
         .baseAttack    = 85,
         .baseDefense   = 40,
         .baseSpeed     = 35,
@@ -7634,7 +7634,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_CACTURNE] =
     {
-        .baseHP        = 70,
+        .baseHP        = 90,
         .baseAttack    = 115,
         .baseDefense   = 60,
         .baseSpeed     = 55,
