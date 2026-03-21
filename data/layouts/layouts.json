@@ -1412,7 +1412,7 @@
     {
       "id": "LAYOUT_RUSTURF_TUNNEL",
       "name": "RusturfTunnel_Layout",
-      "width": 36,
+      "width": 42,
       "height": 24,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_RusturfTunnel",
