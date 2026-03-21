@@ -91,6 +91,10 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL
+	msgbox MossdeepCity_Gym_Text_MentionSafariZoneConstruction, MSGBOX_DEFAULT
+	closemessage
+	setflag FLAG_HIDE_SAFARI_ZONE_SOUTH_CONSTRUCTION_WORKERS
+	clearflag FLAG_HIDE_SAFARI_ZONE_SOUTH_EAST_EXPANSION
 	release
 	end
 
@@ -651,3 +655,11 @@ MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons:
 	.string "LIZA: You brought just one POKéMON!\p"
 	.string "TATE: We need you to bring at least…\n"
 	.string "LIZA: Two POKéMON when you come back.$"
+
+MossdeepCity_Gym_Text_MentionSafariZoneConstruction:
+	.string "TATE: Oh by the way\n"
+	.string "LIZA: We just heard some good news.\p"
+	.string "TATE: The construction is finally\n"
+	.string "complete in the Safari Zone.\p"
+	.string "LIZA: I heard the new Safari Zone\n"
+	.string "area has some interesting POKéMON.$"
