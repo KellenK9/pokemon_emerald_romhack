@@ -136,6 +136,20 @@ RusturfTunnel_EventScript_WandasBoyfriendNotice::
 	waitmovement 0
 	return
 
+RusturfTunnel_EventScript_EncounterKangaskhan::
+	setwildbattle SPECIES_KANGASKHAN, 25
+	special SetKangaskhanWildMoves
+	waitse
+	playmoncry SPECIES_KANGASKHAN, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_HIDE_KANGASKHAN
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	release
+	end
+
 RusturfTunnel_Movement_WandaExit1:
 	walk_right
 	walk_right

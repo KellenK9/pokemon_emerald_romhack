@@ -29,6 +29,7 @@ EverGrandeCity_HallOfFame_EventScript_ResetDefeatedEventLegendaries::
 	clearflag FLAG_DEFEATED_LUGIA
 	clearflag FLAG_DEFEATED_HO_OH
 	clearflag FLAG_ROTOM_ENCOUNTERED
+	clearflag FLAG_HIDE_KANGASKHAN
 	return
 
 EverGrandeCity_HallOfFame_EventScript_ReadyReceiveSSTicketEvent::

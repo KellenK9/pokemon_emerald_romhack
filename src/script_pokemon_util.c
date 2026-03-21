@@ -185,6 +185,27 @@ void SetRotomWildMoves(void)
     SetMonMoveSlot(&gEnemyParty[0], MOVE_CONFUSE_RAY, 3);
 }
 
+void SetKangaskhanWildMoves(void)
+{
+    // Set ability to ABILITY_SCRAPPY
+    u8 abilityNum = ABILITY_SCRAPPY;
+    SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &abilityNum);
+
+    // Set held item to ITEM_SITRUS_BERRY
+    SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &(u16){ITEM_SITRUS_BERRY});
+
+    // Set nature to Adamant
+    u32 personality = GetMonData(&gEnemyParty[0], MON_DATA_PERSONALITY);
+    ModifyPersonalityForNature(&personality, NATURE_ADAMANT);
+    SetMonData(&gEnemyParty[0], MON_DATA_PERSONALITY, &personality);
+
+    // Set moves
+    SetMonMoveSlot(&gEnemyParty[0], MOVE_HEADBUTT, 0);
+    SetMonMoveSlot(&gEnemyParty[0], MOVE_LOW_KICK, 1);
+    SetMonMoveSlot(&gEnemyParty[0], MOVE_FOCUS_ENERGY, 2);
+    SetMonMoveSlot(&gEnemyParty[0], MOVE_FAKE_OUT, 3);
+}
+
 // Note: When control returns to the event script, gSpecialVar_Result will be
 // TRUE if the party selection was successful.
 void ChooseHalfPartyForBattle(void)
