@@ -998,7 +998,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_BIDOOF
     [SPECIES_BIDOOF] =
     {
-        .baseHP        = 59,
+        .baseHP        = 69,
         .baseAttack    = 45,
         .baseDefense   = 40,
         .baseSpeed     = 31,
@@ -1084,10 +1084,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_BIBAREL] =
     {
-        .baseHP        = 79,
-        .baseAttack    = 85,
+        .baseHP        = 100,
+        .baseAttack    = 90,
         .baseDefense   = 60,
-        .baseSpeed     = 71,
+        .baseSpeed     = 75,
         .baseSpAttack  = 55,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_WATER),
