@@ -525,17 +525,14 @@ RusturfTunnel_Text_BoyfriendOnOtherSideOfRock:
 	.string "for the benefit of everyone.$"
 
 RusturfTunnel_Text_MikeIntro:
-	.string "What do you call a wild man up in the\n"
-	.string "mountains? A mountain man, right?\p"
-	.string "So why don't they call a POKéMON in\n"
-	.string "the mountains a mountain POKéMON?$"
+	.string "There's rumors of a monster hiding\n"
+	.string "in these tunnels.\p"
+	.string "I've heard it myself!$"
 
 RusturfTunnel_Text_MikeDefeat:
-	.string "My POKéMON…\n"
-	.string "Ran out of power…$"
+	.string "I'm too scared to check out the\n"
+	.string "monster noises.$"
 
 RusturfTunnel_Text_MikePostBattle:
-	.string "They halted development here to\n"
-	.string "protect POKéMON, right?\l"
-	.string "There's a feel-good story!$"
+	.string "Did you find the monster?$"
 
