@@ -9614,13 +9614,13 @@
               },
               {
                 "min_level": 34,
-                "max_level": 34,
+                "max_level": 35,
                 "species": "SPECIES_GOLBAT"
               },
               {
-                "min_level": 35,
-                "max_level": 35,
-                "species": "SPECIES_GOLBAT"
+                "min_level": 34,
+                "max_level": 37,
+                "species": "SPECIES_SIGILYPH"
               },
               {
                 "min_level": 34,
@@ -9772,13 +9772,13 @@
               },
               {
                 "min_level": 34,
-                "max_level": 34,
+                "max_level": 35,
                 "species": "SPECIES_GOLBAT"
               },
               {
-                "min_level": 35,
-                "max_level": 35,
-                "species": "SPECIES_GOLBAT"
+                "min_level": 34,
+                "max_level": 37,
+                "species": "SPECIES_SIGILYPH"
               },
               {
                 "min_level": 34,
@@ -9841,13 +9841,13 @@
               },
               {
                 "min_level": 34,
-                "max_level": 34,
+                "max_level": 35,
                 "species": "SPECIES_GOLBAT"
               },
               {
-                "min_level": 35,
-                "max_level": 35,
-                "species": "SPECIES_GOLBAT"
+                "min_level": 34,
+                "max_level": 38,
+                "species": "SPECIES_SIGILYPH"
               },
               {
                 "min_level": 34,
