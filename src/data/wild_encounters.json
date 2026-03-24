@@ -2373,6 +2373,26 @@
                 "species": "SPECIES_SHUPPET"
               }
             ]
+          },
+          "hidden_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 26,
+                "max_level": 26,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 29,
+                "max_level": 29,
+                "species": "SPECIES_MIMIKYU"
+              }
+            ]
           }
         },
         {
@@ -4438,6 +4458,26 @@
                 "species": "SPECIES_SHUPPET"
               }
             ]
+          },
+          "hidden_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 26,
+                "max_level": 26,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 29,
+                "max_level": 29,
+                "species": "SPECIES_MIMIKYU"
+              }
+            ]
           }
         },
         {
@@ -4505,6 +4545,26 @@
                 "min_level": 24,
                 "max_level": 24,
                 "species": "SPECIES_SHUPPET"
+              }
+            ]
+          },
+          "hidden_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 26,
+                "max_level": 26,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 29,
+                "max_level": 29,
+                "species": "SPECIES_MIMIKYU"
               }
             ]
           }
@@ -4576,6 +4636,26 @@
                 "species": "SPECIES_DUSKULL"
               }
             ]
+          },
+          "hidden_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 26,
+                "max_level": 26,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 29,
+                "max_level": 29,
+                "species": "SPECIES_MIMIKYU"
+              }
+            ]
           }
         },
         {
@@ -4645,6 +4725,26 @@
                 "species": "SPECIES_DUSKULL"
               }
             ]
+          },
+          "hidden_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 26,
+                "max_level": 26,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 29,
+                "max_level": 29,
+                "species": "SPECIES_MIMIKYU"
+              }
+            ]
           }
         },
         {
@@ -4712,6 +4812,26 @@
                 "min_level": 29,
                 "max_level": 29,
                 "species": "SPECIES_DUSKULL"
+              }
+            ]
+          },
+          "hidden_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 26,
+                "max_level": 26,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 29,
+                "max_level": 29,
+                "species": "SPECIES_MIMIKYU"
               }
             ]
           }
