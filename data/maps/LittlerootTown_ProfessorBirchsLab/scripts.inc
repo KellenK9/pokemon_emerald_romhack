@@ -818,7 +818,7 @@ LittlerootTown_ProfessorBirchsLab_Text_UpgradeToNationalImmediately:
 	.string "So I might as well give you the\n"
 	.string "NATIONAL POKéDEX right away.\p"
 	.string "That way, you can keep records on\n"
-	.string "POKéMON from other regions too!$
+	.string "POKéMON from other regions too!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_TakeTheseToo:
 	.string "PROF. BIRCH: Oh, I almost forgot!\n"
