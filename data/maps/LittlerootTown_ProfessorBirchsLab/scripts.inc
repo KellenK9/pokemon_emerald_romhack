@@ -135,6 +135,9 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedexAndNationalDex::
 	waitfanfare
 	setflag FLAG_SYS_NATIONAL_DEX
 	special EnableNationalPokedex
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_TakeTheseToo, MSGBOX_DEFAULT
+	closemessage
+	giveitem ITEM_POKE_BALL, 10
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_GoSeeRival
 	end
 
@@ -816,6 +819,11 @@ LittlerootTown_ProfessorBirchsLab_Text_UpgradeToNationalImmediately:
 	.string "NATIONAL POKéDEX right away.\p"
 	.string "That way, you can keep records on\n"
 	.string "POKéMON from other regions too!$
+
+LittlerootTown_ProfessorBirchsLab_Text_TakeTheseToo:
+	.string "PROF. BIRCH: Oh, I almost forgot!\n"
+	.string "Take these too. You'll need them to\l"
+	.string "catch wild POKéMON.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ThankYouForFillingPokedex:
 	.string "PROF. BIRCH: {PLAYER}{KUN}, I want to thank\n"
