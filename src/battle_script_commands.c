@@ -903,48 +903,45 @@ static const struct SpriteTemplate sSpriteTemplate_MonIconOnLvlUpBanner =
 static const struct PickupItem sPickupTable[] =
 {//   Item                      1+  11+  21+  31+  41+  51+  61+  71+  81+  91+   Levels
     { ITEM_POTION,          {  35,   _,   _,   _,   _,   _,   _,   _,   _,   _, } },
-    { ITEM_TINY_MUSHROOM,   {  25,  10,   _,   _,   _,   _,   _,   _,   _,   _, } },
-    { ITEM_REPEL,           {   8,  30,   _,   _,   _,   _,   _,   _,   _,   _, } },
-    { ITEM_SUPER_POTION,    {   8,  10,  30,   _,   _,   _,   _,   _,   _,   _, } },
-    { ITEM_POKE_DOLL,       {   8,  10,   9,  30,   _,   _,   _,   _,   _,   _, } },
+    { ITEM_TINY_MUSHROOM,   {  25,  13,   _,   _,   _,   _,   _,   _,   _,   _, } },
+    { ITEM_SUPER_POTION,    {   8,  24,  39,   _,   _,   _,   _,   _,   _,   _, } },
+    { ITEM_POKE_DOLL,       {  13,  20,   9,  35,   _,   _,   _,   _,   _,   _, } },
     { ITEM_BIG_MUSHROOM,    {   3,  10,   9,   _,   _,   _,   _,   _,   _,   _, } },
-    { ITEM_SUPER_REPEL,     {   3,  10,   9,   9,  30,   _,   _,   _,   _,   _, } },
-    { ITEM_FULL_HEAL,       {   3,   3,   9,   8,   9,  30,   _,   _,   _,   _, } },
-    { ITEM_REVIVE,          {   3,   3,   3,   8,   8,   9,  30,   _,   _,   _, } },
-    { ITEM_HYPER_POTION,    {   3,   3,   3,   4,   8,   9,   8,  30,   _,   _, } },
+    { ITEM_FULL_HEAL,       {   3,   8,   9,   8,  22,  30,   _,   _,   _,   _, } },
+    { ITEM_REVIVE,          {   3,   3,   3,   8,  19,   9,  35,   _,   _,   _, } },
+    { ITEM_HYPER_POTION,    {   3,   3,   3,   4,  10,   9,   8,  37,   _,   _, } },
     { ITEM_ETHER,           {   1,   1,   3,   4,   4,   _,   _,   _,   _,   _, } },
-    { ITEM_MAX_REPEL,       {   _,   3,   3,   4,   4,   9,   8,   8,  30,   _, } },
-    { ITEM_MOON_STONE,      {   _,   3,   3,   4,   4,   4,   4,   5,   9,  10, } },
-    { ITEM_SUN_STONE,       {   _,   3,   3,   4,   4,   4,   4,   5,   9,  10, } },
-    { ITEM_RARE_CANDY,      {   _,   1,   1,   1,   1,   4,   4,   5,   4,   5, } },
-    { ITEM_NUGGET,          {   _,   _,   3,   4,   4,   4,   4,   5,   4,   5, } },
-    { ITEM_MAX_POTION,      {   _,   _,   3,   4,   4,   4,   8,   8,   9,  30, } },
-    { ITEM_MAX_ETHER,       {   _,   _,   1,   1,   4,   4,   4,   _,   _,   _, } },
-    { ITEM_PP_UP,           {   _,   _,   1,   1,   1,   4,   4,   5,   4,   5, } },
-    { ITEM_BIG_NUGGET,      {   _,   _,   1,   1,   1,   1,   4,   5,   4,   5, } },
-    { ITEM_DESTINY_KNOT,    {   _,   _,   1,   1,   1,   1,   1,   1,   1,   1, } },
-    { ITEM_LEFTOVERS,       {   _,   _,   1,   1,   1,   1,   1,   1,   1,   1, } },
-    { ITEM_MENTAL_HERB,     {   _,   _,   1,   1,   1,   1,   1,   1,   1,   1, } },
-    { ITEM_POWER_HERB,      {   _,   _,   1,   1,   1,   1,   1,   1,   1,   1, } },
-    { ITEM_WHITE_HERB,      {   _,   _,   1,   1,   1,   1,   1,   1,   1,   1, } },
-    { ITEM_BALM_MUSHROOM,   {   _,   _,   1,   4,   4,   4,   4,   5,   4,   5, } },
+    { ITEM_MOON_STONE,      {   1,   3,   3,   4,   4,  10,   4,   5,   9,  10, } },
+    { ITEM_SUN_STONE,       {   1,   3,   3,   4,   4,  10,   4,   5,   9,  10, } },
+    { ITEM_RARE_CANDY,      {   1,   2,   1,   1,   1,   4,   4,   5,   4,   5, } },
+    { ITEM_NUGGET,          {   1,   5,   5,   4,   8,   4,   4,   5,   4,   5, } },
+    { ITEM_MAX_POTION,      {   _,   1,   3,   4,   4,   4,   8,   8,  10,  30, } },
+    { ITEM_MAX_ETHER,       {   _,   1,   1,   1,   4,   4,   4,   _,   _,   _, } },
+    { ITEM_PP_UP,           {   _,   1,   1,   1,   1,   4,   4,   5,   4,   5, } },
+    { ITEM_BIG_NUGGET,      {   _,   1,   1,   1,   1,   1,   4,   5,   4,   5, } },
+    { ITEM_DESTINY_KNOT,    {   _,   1,   1,   1,   1,   1,   1,   1,   1,   1, } },
+    { ITEM_LEFTOVERS,       {   1,   1,   1,   1,   1,   1,   1,   1,   1,   1, } },
+    { ITEM_MENTAL_HERB,     {   _,   1,   1,   1,   1,   1,   1,   1,   1,   1, } },
+    { ITEM_POWER_HERB,      {   _,   1,   1,   1,   1,   1,   1,   1,   1,   1, } },
+    { ITEM_WHITE_HERB,      {   _,   1,   1,   1,   1,   1,   1,   1,   1,   1, } },
+    { ITEM_BALM_MUSHROOM,   {   _,   1,   1,   4,   4,   4,   4,   5,   4,   5, } },
     { ITEM_MAX_REVIVE,      {   _,   _,   _,   4,   4,   4,   4,   7,   9,   9, } },
     { ITEM_ELIXIR,          {   _,   _,   _,   _,   1,   1,   4,   5,   4,   5, } },
     { ITEM_MAX_ELIXIR,      {   _,   _,   _,   _,   _,   _,   1,   1,   4,   5, } },
-    { ITEM_BOTTLE_CAP,      {   _,   _,   _,   _,   _,   _,   _,   1,   1,   1, } },
+    { ITEM_BOTTLE_CAP,      {   1,   1,   1,   1,   1,   1,   1,   1,   1,   1, } },
 };
 
 #undef _
 
 bool32 ProteanTryChangeType(enum BattlerId battler, enum Ability ability, enum Move move, enum Type moveType)
 {
-      if ((ability == ABILITY_PROTEAN || ability == ABILITY_LIBERO)
-         && !gBattleMons[gBattlerAttacker].volatiles.usedProteanLibero
-         && !gBattleStruct->bouncedMoveIsUsed
-         && (gBattleMons[battler].types[0] != moveType || gBattleMons[battler].types[1] != moveType
-             || (gBattleMons[battler].types[2] != moveType && gBattleMons[battler].types[2] != TYPE_MYSTERY))
-         && move != MOVE_STRUGGLE
-         && GetActiveGimmick(battler) != GIMMICK_TERA)
+    if ((ability == ABILITY_PROTEAN || ability == ABILITY_LIBERO)
+        && !gBattleMons[gBattlerAttacker].volatiles.usedProteanLibero
+        && !gBattleStruct->bouncedMoveIsUsed
+        && (gBattleMons[battler].types[0] != moveType || gBattleMons[battler].types[1] != moveType
+            || (gBattleMons[battler].types[2] != moveType && gBattleMons[battler].types[2] != TYPE_MYSTERY))
+        && move != MOVE_STRUGGLE
+        && GetActiveGimmick(battler) != GIMMICK_TERA)
     {
         SET_BATTLER_TYPE(battler, moveType);
         return TRUE;
