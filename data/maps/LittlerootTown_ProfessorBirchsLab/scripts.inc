@@ -138,6 +138,8 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedexAndNationalDex::
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_TakeTheseToo, MSGBOX_DEFAULT
 	closemessage
 	giveitem ITEM_POKE_BALL, 10
+	giveitem ITEM_HEAL_BALL, 5
+	giveitem ITEM_LUXURY_BALL, 5
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_GoSeeRival
 	end
 
