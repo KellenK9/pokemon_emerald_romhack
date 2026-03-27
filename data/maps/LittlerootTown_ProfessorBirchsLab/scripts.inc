@@ -835,7 +835,7 @@ LittlerootTown_ProfessorBirchsLab_Text_ThankYouForFillingPokedex:
 LittlerootTown_ProfessorBirchsLab_Text_DexnavUpdatedVersion:
 	.string "PROF. BIRCH: {PLAYER}{KUN}, I have a gift\n"
 	.string "for you as well.\p"
-	.string "This is the DEXNAV—an upgraded\n"
+	.string "This is the DEXNAV. It's an upgraded\n"
 	.string "experimental version of the POKéDEX\l"
 	.string "I've been developing.\p"
 	.string "The DEXNAV will track which POKéMON\n"
