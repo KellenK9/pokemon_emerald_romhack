@@ -123,12 +123,11 @@ LittlerootTown_ProfessorBirchsLab_EventScript_NicknameStarter::
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedexAndNationalDex::
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_SomethingElse, MSGBOX_DEFAULT
 	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex, MSGBOX_DEFAULT
-	closemessage
 	delay 20
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_UpgradeToNationalImmediately, MSGBOX_DEFAULT
-	closemessage
 	playfanfare MUS_OBTAIN_ITEM
 	message LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational
 	waitmessage
@@ -136,7 +135,6 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedexAndNationalDex::
 	setflag FLAG_SYS_NATIONAL_DEX
 	special EnableNationalPokedex
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_TakeTheseToo, MSGBOX_DEFAULT
-	closemessage
 	giveitem ITEM_POKE_BALL, 10
 	giveitem ITEM_HEAL_BALL, 5
 	giveitem ITEM_LUXURY_BALL, 5
@@ -188,7 +186,6 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GivePokedexEvent::
 
 LittlerootTown_ProfessorBirchsLab_EventScript_GivePokeballsAfterRivalBattle::
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_ThankYouForFillingPokedex, MSGBOX_DEFAULT
-	closemessage
 	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokenav
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_DexnavUpdatedVersion, MSGBOX_DEFAULT
 	closemessage
@@ -747,6 +744,10 @@ LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon:
 	.string "PROF. BIRCH: While you're at it, why not\n"
 	.string "give a nickname to that {STR_VAR_1}?$"
 
+LittlerootTown_ProfessorBirchsLab_Text_SomethingElse:
+	.string "PROF. BIRCH: Here's something else for\n"
+	.string "you. It will help me with my research.$"
+
 LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival:
 	.string "PROF. BIRCH: If you work at POKéMON\n"
 	.string "and gain experience, I think you'll make\l"
@@ -835,9 +836,9 @@ LittlerootTown_ProfessorBirchsLab_Text_ThankYouForFillingPokedex:
 	.string "truly impressive!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_DexnavUpdatedVersion:
-	.string "PROF. BIRCH: {PLAYER}{KUN}, I have a gift\n"
-	.string "for you as well.\p"
-	.string "This is the DEXNAV. It's an upgraded\n"
+	.string "PROF. BIRCH: {PLAYER}{KUN}, this is\n"
+	.string "yet another gift for you.\p"
+	.string "It's called the DEXNAV: an upgraded\n"
 	.string "experimental version of the POKéDEX\l"
 	.string "I've been developing.\p"
 	.string "The DEXNAV will track which POKéMON\n"
