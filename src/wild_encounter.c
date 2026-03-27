@@ -24,6 +24,7 @@
 #include "battle_pike.h"
 #include "battle_pyramid.h"
 #include "constants/abilities.h"
+#include "constants/flags.h"
 #include "constants/game_stat.h"
 #include "constants/item.h"
 #include "constants/items.h"
@@ -1053,6 +1054,21 @@ bool8 UpdateRepelCounter(void)
 static bool8 IsWildLevelAllowedByRepel(u8 wildLevel)
 {
     u8 i;
+
+    // Check if Repel Charm is active
+    if (FlagGet(FLAG_REPEL_CHARM))
+    {
+        // Repel Charm prevents wild encounters based on party level
+        for (i = 0; i < PARTY_SIZE; i++)
+        {
+            if (I_REPEL_INCLUDE_FAINTED == GEN_1 || I_REPEL_INCLUDE_FAINTED >= GEN_6 || GetMonData(&gPlayerParty[i], MON_DATA_HP))
+            {
+                if (!GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG))
+                    return wildLevel >= GetMonData(&gPlayerParty[i], MON_DATA_LEVEL);
+            }
+        }
+        return FALSE;
+    }
 
     if (!REPEL_STEP_COUNT)
         return TRUE;

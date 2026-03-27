@@ -7241,6 +7241,22 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_Glimmoranite,
     },
 
+    [ITEM_REPEL_CHARM] =
+    {
+        .name = ITEM_NAME("Repel Charm"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "A charm that toggles\n"
+            "to prevent wild\n"
+            "Pokémon encounters."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_RepelCharm,
+        .iconPic = gItemIcon_GlimmeringCharm,
+        .iconPalette = gItemIconPalette_GlimmeringCharm,
+    },
+
 // Gems
     #if I_PRICE >= GEN_9
         #define GEM_PRICE 15000
