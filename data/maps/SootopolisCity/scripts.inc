@@ -112,6 +112,7 @@ SootopolisCity_EventScript_SetExitCaveOfOriginObjPos::
 	end
 
 SootopolisCity_EventScript_SetOutsideGymObjPos::
+	setflag FLAG_RAYQUAZA_DEFEATED
 	setobjectxyperm LOCALID_SOOTOPOLIS_EXPERT, 31, 18
 	setobjectxyperm LOCALID_SOOTOPOLIS_STEVEN, 29, 33
 	setobjectxyperm LOCALID_SOOTOPOLIS_MAXIE, 33, 35
