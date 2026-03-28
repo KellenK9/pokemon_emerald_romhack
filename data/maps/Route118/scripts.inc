@@ -94,6 +94,9 @@ Route118_EventScript_StevenTrigger::
 	waitmovement 0
 	delay 30
 	msgbox Route118_Text_StevenQuestions, MSGBOX_DEFAULT
+	giveitem ITEM_MEGA_RING
+	msgbox Route118_Text_StevenExplainMegaRing, MSGBOX_DEFAULT
+	call_if_unset FLAG_RECEIVED_GOOD_ROD, Route118_EventScript_MentionGoodRod
 	closemessage
 	call_if_eq VAR_0x8008, 0, Route118_EventScript_StevenExit0
 	call_if_eq VAR_0x8008, 1, Route118_EventScript_StevenExit1
@@ -102,6 +105,10 @@ Route118_EventScript_StevenTrigger::
 	removeobject LOCALID_ROUTE118_STEVEN
 	releaseall
 	end
+
+Route118_EventScript_MentionGoodRod::
+	msgbox Route118_Text_StevenRemindGoodRod, MSGBOX_DEFAULT
+	return
 
 Route118_EventScript_StevenExit0::
 	applymovement LOCALID_PLAYER, Route118_Movement_PlayerWatchStevenExit
@@ -247,19 +254,39 @@ Route118_Text_StevenQuestions:
 	.string "STEVEN: Hi, {PLAYER}{KUN}!\p"
 	.string "It's me, STEVEN!\n"
 	.string "We met in the cave near DEWFORD.\p"
-	.string "Have you met many kinds of POKéMON\n"
-	.string "since I last saw you?\p"
-	.string "There are many, many kinds of POKéMON\n"
-	.string "in this wide world of ours.\p"
-	.string "If you wanted to raise only your\n"
-	.string "favorites, that's fine.\p"
-	.string "Perhaps you find it more fun to raise\n"
-	.string "all sorts of POKéMON.\p"
-	.string "As a TRAINER of POKéMON,\n"
-	.string "what do you think?\p"
-	.string "Of course, it's not any of my business.\p"
-	.string "It would be nice if we were to meet\n"
-	.string "again somewhere.$"
+	.string "I see you've come a long way in your\n"
+	.string "POKéMON journey since then.\p"
+	.string "You've gotten much stronger but…\n"
+	.string "even still…\p"
+	.string "If you want to become the strongest,\n"
+	.string "you'll need this.$"
+
+Route118_Text_StevenExplainMegaRing:
+	.string "That MEGA RING will help your\n"
+	.string "POKéMON reach their true potential.\p"
+	.string "Certain POKéMON contain the ability\n"
+	.string "to undergo a special and temporary\l"
+	.string "form of evolution by utilizing the\l"
+	.string "power of mega stones.\p"
+	.string "These mega stones give off a special\n"
+	.string "energy that resonates with the\l"
+	.string "MEGA BRACELET and can cause specific\l"
+	.string "POKéMON to mega evolve.\p"
+	.string "Each POKéMON must hold their matching\n"
+	.string "mega stone during battle to access\l"
+	.string "this strange power.\p"
+	.string "Unfortunately, I don't have any mega\n"
+	.string "stones with me to give you,\l"
+	.string "but you should be able to find\l"
+	.string "them hidden across Hoenn.\p"
+	.string "Best of luck in collecting\n"
+	.string "mega stones!$"
+
+msgbox Route118_Text_StevenExplainMegaRing, MSGBOX_DEFAULT:
+	.string "By the way, you may want to check out\n"
+	.string "the river you just crossed.\p"
+	.string "A generous friend of mine likes\n"
+	.string "to fish there.$"
 
 Route118_Text_YouAgreeGoodRodIsGood:
 	.string "Hmm!\n"
