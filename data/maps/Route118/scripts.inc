@@ -282,7 +282,7 @@ Route118_Text_StevenExplainMegaRing:
 	.string "Best of luck in collecting\n"
 	.string "mega stones!$"
 
-msgbox Route118_Text_StevenExplainMegaRing, MSGBOX_DEFAULT:
+Route118_Text_StevenExplainMegaRing:
 	.string "By the way, you may want to check out\n"
 	.string "the river you just crossed.\p"
 	.string "A generous friend of mine likes\n"
