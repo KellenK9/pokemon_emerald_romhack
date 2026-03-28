@@ -54,9 +54,9 @@
 #define DN_FLAG_DEXNAV_GET   0x20 // DexNav: Show in start menu
 #define I_EXP_SHARE_FLAG     0x21 // Player obtains the Exp Share key item used in gens 6+
 #define FLAG_REPEL_CHARM     0x22 // Repel Charm toggle: active when set
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
+#define FLAG_CAUGHT_RAYQUAZA 0x23 // Updated for romhack
+#define FLAG_CAUGHT_GROUDON  0x24 // Updated for romhack
+#define FLAG_CAUGHT_KYOGRE   0x25 // Updated for romhack
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag
 #define FLAG_UNUSED_0x027    0x27 // Unused Flag
 #define FLAG_UNUSED_0x028    0x28 // Unused Flag

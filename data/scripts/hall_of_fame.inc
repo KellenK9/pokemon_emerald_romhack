@@ -31,6 +31,9 @@ EverGrandeCity_HallOfFame_EventScript_ResetDefeatedEventLegendaries::
 	clearflag FLAG_DEFEATED_ARTICUNO
 	clearflag FLAG_DEFEATED_ZAPDOS
 	clearflag FLAG_DEFEATED_MOLTRES
+	clearflag FLAG_DEFEATED_RAYQUAZA
+	clearflag FLAG_DEFEATED_KYOGRE
+	clearflag FLAG_DEFEATED_GROUDON
 	return
 
 EverGrandeCity_HallOfFame_EventScript_ReadyReceiveSSTicketEvent::
