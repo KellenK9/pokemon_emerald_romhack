@@ -159,14 +159,12 @@ LittlerootTown_ProfessorBirchsLab_EventScript_AgreeToSeeRival::
 
 LittlerootTown_ProfessorBirchsLab_EventScript_SkipMeetingBrendansMom::
 	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 2
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_BEDROOM
 	releaseall
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_SkipMeetingMaysMom::
 	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 2
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM
 	releaseall
 	end
