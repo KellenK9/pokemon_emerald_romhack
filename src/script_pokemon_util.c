@@ -206,6 +206,45 @@ void SetKangaskhanWildMoves(void)
     SetMonMoveSlot(&gEnemyParty[0], MOVE_FAKE_OUT, 3);
 }
 
+void SetArticunoWildMoves(void)
+{
+    u8 abilityNum = ABILITY_SNOW_CLOAK;
+    SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &abilityNum);
+
+    SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &(u16){ITEM_LUM_BERRY});
+
+    SetMonMoveSlot(&gEnemyParty[0], MOVE_HAIL, 0);
+    SetMonMoveSlot(&gEnemyParty[0], MOVE_ICE_BEAM, 1);
+    SetMonMoveSlot(&gEnemyParty[0], MOVE_FLY, 2);
+    SetMonMoveSlot(&gEnemyParty[0], MOVE_ROOST, 3);
+}
+
+void SetMoltresWildMoves(void)
+{
+    u8 abilityNum = ABILITY_FLAME_BODY;
+    SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &abilityNum);
+
+    SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &(u16){ITEM_LUM_BERRY});
+
+    SetMonMoveSlot(&gEnemyParty[0], MOVE_FLAMETHROWER, 0);
+    SetMonMoveSlot(&gEnemyParty[0], MOVE_FLY, 1);
+    SetMonMoveSlot(&gEnemyParty[0], MOVE_ROOST, 2);
+    SetMonMoveSlot(&gEnemyParty[0], MOVE_SUNNY_DAY, 3);
+}
+
+void SetZapdosWildMoves(void)
+{
+    u8 abilityNum = ABILITY_STATIC;
+    SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &abilityNum);
+
+    SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &(u16){ITEM_LUM_BERRY});
+
+    SetMonMoveSlot(&gEnemyParty[0], MOVE_FLY, 0);
+    SetMonMoveSlot(&gEnemyParty[0], MOVE_ROOST, 1);
+    SetMonMoveSlot(&gEnemyParty[0], MOVE_THUNDERBOLT, 2);
+    SetMonMoveSlot(&gEnemyParty[0], MOVE_CHARGE, 3);
+}
+
 // Note: When control returns to the event script, gSpecialVar_Result will be
 // TRUE if the party selection was successful.
 void ChooseHalfPartyForBattle(void)

@@ -1,5 +1,48 @@
 GraniteCave_StevensRoom_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, GraniteCave_StevensRoom_OnTransition
 	.byte 0
+
+GraniteCave_StevensRoom_OnTransition::
+	setflag FLAG_HIDE_ARTICUNO_EMERALD
+	setflag FLAG_HIDE_ZAPDOS_EMERALD
+	setflag FLAG_HIDE_MOLTRES_EMERALD
+	specialvar VAR_RESULT, CheckGorebyss
+	goto_if_eq VAR_RESULT, TRUE, GraniteCave_StevensRoom_LureArticuno
+	specialvar VAR_RESULT, CheckHuntail
+	goto_if_eq VAR_RESULT, TRUE, GraniteCave_StevensRoom_LureMoltres
+	specialvar VAR_RESULT, CheckLanturn
+	goto_if_eq VAR_RESULT, TRUE, GraniteCave_StevensRoom_LureZapdos
+	return
+
+GraniteCave_StevensRoom_HideArticuno::
+	setflag FLAG_HIDE_ARTICUNO_EMERALD
+	return
+
+GraniteCave_StevensRoom_HideZapdos::
+	setflag FLAG_HIDE_ZAPDOS_EMERALD
+	return
+
+GraniteCave_StevensRoom_HideMoltres::
+	setflag FLAG_HIDE_MOLTRES_EMERALD
+	return
+
+GraniteCave_StevensRoom_LureArticuno::
+	clearflag FLAG_HIDE_ARTICUNO_EMERALD
+	call_if_set FLAG_DEFEATED_ARTICUNO, GraniteCave_StevensRoom_HideArticuno
+	call_if_set FLAG_CAUGHT_ARTICUNO, GraniteCave_StevensRoom_HideArticuno
+	return
+
+GraniteCave_StevensRoom_LureMoltres::
+	clearflag FLAG_HIDE_MOLTRES_EMERALD
+	call_if_set FLAG_DEFEATED_MOLTRES, GraniteCave_StevensRoom_HideMoltres
+	call_if_set FLAG_CAUGHT_MOLTRES, GraniteCave_StevensRoom_HideMoltres
+	return
+
+GraniteCave_StevensRoom_LureZapdos::
+	clearflag FLAG_HIDE_ZAPDOS_EMERALD
+	call_if_set FLAG_DEFEATED_ZAPDOS, GraniteCave_StevensRoom_HideZapdos
+	call_if_set FLAG_CAUGHT_ZAPDOS, GraniteCave_StevensRoom_HideZapdos
+	return
 
 GraniteCave_StevensRoom_EventScript_Steven::
 	lock
@@ -51,6 +94,102 @@ GraniteCave_StevensRoom_EventScript_StevenExitSouth::
 GraniteCave_StevensRoom_EventScript_BagFull::
 	msgbox GraniteCave_StevensRoom_Text_OhBagIsFull, MSGBOX_DEFAULT
 	return
+
+GraniteCave_StevensRoom_EventScript_Articuno::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ARTICUNO, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_ARTICUNO, 40
+	special SetArticunoWildMoves
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, GraniteCave_StevensRoom_EventScript_DefeatedArticuno
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, GraniteCave_StevensRoom_EventScript_RanFromArticuno
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, GraniteCave_StevensRoom_EventScript_RanFromArticuno
+	setflag FLAG_CAUGHT_ARTICUNO
+	release
+	end
+
+GraniteCave_StevensRoom_EventScript_Zapdos::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ZAPDOS, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_ZAPDOS, 40
+	special SetZapdosWildMoves
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, GraniteCave_StevensRoom_EventScript_DefeatedZapdos
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, GraniteCave_StevensRoom_EventScript_RanFromZapdos
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, GraniteCave_StevensRoom_EventScript_RanFromZapdos
+	setflag FLAG_CAUGHT_ZAPDOS
+	release
+	end
+
+GraniteCave_StevensRoom_EventScript_Moltres::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MOLTRES, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_MOLTRES, 40
+	special SetMoltresWildMoves
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, GraniteCave_StevensRoom_EventScript_DefeatedMoltres
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, GraniteCave_StevensRoom_EventScript_RanFromMoltres
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, GraniteCave_StevensRoom_EventScript_RanFromMoltres
+	setflag FLAG_CAUGHT_MOLTRES
+	release
+	end
+
+GraniteCave_StevensRoom_EventScript_DefeatedArticuno::
+	setflag FLAG_DEFEATED_ARTICUNO
+	setvar VAR_0x8004, SPECIES_ARTICUNO
+	goto Common_EventScript_LegendaryFlewAway
+	end
+
+GraniteCave_StevensRoom_EventScript_RanFromArticuno::
+	setvar VAR_0x8004, SPECIES_ARTICUNO
+	goto Common_EventScript_LegendaryFlewAway
+	end
+
+GraniteCave_StevensRoom_EventScript_DefeatedMoltres::
+	setflag FLAG_DEFEATED_MOLTRES
+	setvar VAR_0x8004, SPECIES_MOLTRES
+	goto Common_EventScript_LegendaryFlewAway
+	end
+
+GraniteCave_StevensRoom_EventScript_RanFromMoltres::
+	setvar VAR_0x8004, SPECIES_MOLTRES
+	goto Common_EventScript_LegendaryFlewAway
+	end
+
+GraniteCave_StevensRoom_EventScript_DefeatedZapdos::
+	setflag FLAG_DEFEATED_ZAPDOS
+	setvar VAR_0x8004, SPECIES_ZAPDOS
+	goto Common_EventScript_LegendaryFlewAway
+	end
+
+GraniteCave_StevensRoom_EventScript_RanFromZapdos::
+	setvar VAR_0x8004, SPECIES_ZAPDOS
+	goto Common_EventScript_LegendaryFlewAway
+	end
 
 GraniteCave_StevensRoom_Movement_StevenExit:
 	walk_up

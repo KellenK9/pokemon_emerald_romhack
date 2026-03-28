@@ -524,12 +524,12 @@
 #define FLAG_DEFEATED_HO_OH                  0x1DC
 #define FLAG_DEFEATED_LUGIA                  0x1DD
 
-#define FLAG_UNUSED_0x1DE                    0x1DE // Unused Flag
-#define FLAG_UNUSED_0x1DF                    0x1DF // Unused Flag
-#define FLAG_UNUSED_0x1E0                    0x1E0 // Unused Flag
-#define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
-#define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
-#define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
+#define FLAG_HIDE_ARTICUNO_EMERALD           0x1DE // Updated for romhack
+#define FLAG_HIDE_MOLTRES_EMERALD            0x1DF // Updated for romhack
+#define FLAG_HIDE_ZAPDOS_EMERALD             0x1E0 // Updated for romhack
+#define FLAG_CAUGHT_ARTICUNO                 0x1E1 // Updated for romhack
+#define FLAG_CAUGHT_MOLTRES                  0x1E2 // Updated for romhack
+#define FLAG_CAUGHT_ZAPDOS                   0x1E3 // Updated for romhack
 
 // Mystery Gift Flags (Unknown)
 #define FLAG_MYSTERY_GIFT_DONE               0x1E4
@@ -664,9 +664,9 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_UNUSED_0x264  0x264 // Unused Flag
-#define FLAG_UNUSED_0x265  0x265 // Unused Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
+#define FLAG_DEFEATED_ARTICUNO     0x264 // Updated for romhack
+#define FLAG_DEFEATED_MOLTRES      0x265 // Updated for romhack
+#define FLAG_DEFEATED_ZAPDOS       0x266 // Updated for romhack
 #define FLAG_UNUSED_0x267  0x267 // Unused Flag
 #define FLAG_UNUSED_0x268  0x268 // Unused Flag
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag

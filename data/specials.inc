@@ -640,3 +640,9 @@ gSpecials::
 	def_special CheckAddCoins
 	def_special SetRotomWildMoves
 	def_special SetKangaskhanWildMoves
+	def_special CheckGorebyss
+	def_special CheckHuntail
+	def_special CheckLanturn
+	def_special SetArticunoWildMoves
+	def_special SetZapdosWildMoves
+	def_special SetMoltresWildMoves

@@ -28,6 +28,9 @@ EverGrandeCity_HallOfFame_EventScript_ResetDefeatedEventLegendaries::
 	clearflag FLAG_DEFEATED_HO_OH
 	clearflag FLAG_ROTOM_ENCOUNTERED
 	clearflag FLAG_HIDE_KANGASKHAN
+	clearflag FLAG_DEFEATED_ARTICUNO
+	clearflag FLAG_DEFEATED_ZAPDOS
+	clearflag FLAG_DEFEATED_MOLTRES
 	return
 
 EverGrandeCity_HallOfFame_EventScript_ReadyReceiveSSTicketEvent::

@@ -103,6 +103,33 @@ bool8 CheckRelicanthWailord(void)
     return FALSE;
 }
 
+bool8 CheckGorebyss(void)
+{
+    if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_GOREBYSS)
+    {
+        return TRUE;
+    }
+    return FALSE;
+}
+
+bool8 CheckHuntail(void)
+{
+    if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_HUNTAIL)
+    {
+        return TRUE;
+    }
+    return FALSE;
+}
+
+bool8 CheckLanturn(void)
+{
+    if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_LANTURN)
+    {
+        return TRUE;
+    }
+    return FALSE;
+}
+
 // THEORY: this was caused by block commenting out all of the older R/S braille functions but leaving the call to it itself, which creates the nullsub.
 void ShouldDoBrailleRegirockEffectOld(void)
 {
