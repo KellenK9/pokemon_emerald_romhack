@@ -628,9 +628,16 @@ DewfordTown_EventScript_PhraseNotTrendyEnough::
 	end
 
 DewfordTown_Text_TinyIslandCommunity:
-	.string "DEWFORD is a tiny island community.\n"
-	.string "If something gets trendy here,\l"
-	.string "everyone picks up on it right away.$"
+	.string "There's an ancient myth about\n"
+	.string "GRANITE CAVE in DEWFORD TOWN.\p"
+	.string "It says the birds of legend rest\n"
+	.string "in the darkness of GRANITE CAVE.\p"
+	.string "They hide from humans and will\n"
+	.string "only come out when they smell their\l"
+	.string "favorite meals.$"
+	.string "They're supposedly quite picky,\n"
+	.string "preferring fish from the deepest depths\l"
+	.string "that they can't normally reach.$"
 
 DewfordTown_Text_TownSign:
 	.string "DEWFORD TOWN\n"
