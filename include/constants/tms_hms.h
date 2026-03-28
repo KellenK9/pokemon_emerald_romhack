@@ -54,7 +54,25 @@
     F(SNATCH) \
     F(OVERHEAT) \
     F(KNOCK_OFF) \
-    F(STEALTH_ROCK)
+    F(STEALTH_ROCK) \
+    F(FALSE_SWIPE) \
+    F(SWAGGER) \
+    F(SUBSTITUTE) \
+    F(SNORE) \
+    F(SLEEP_TALK) \
+    F(ROUND) \
+    F(MIMIC) \
+    F(ENDURE) \
+    F(CONFIDE) \
+    F(U_TURN) \
+    F(VOLT_SWITCH) \
+    F(FLIP_TURN) \
+    F(TRICK_ROOM) \
+    F(ROOST) \
+    F(SWORDS_DANCE) \
+    F(NASTY_PLOT) \
+    F(DRAIN_PUNCH) \
+    F(EARTH_POWER)
 
 #define FOREACH_HM(F) \
     F(CUT) \
