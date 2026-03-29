@@ -150,7 +150,7 @@
       "flag": "FLAG_HIDE_RUSTURF_TUNNEL_WANDA"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_KANGASKHAN",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KANGASKHAN)",
       "x": 38,
       "y": 5,
       "elevation": 0,
