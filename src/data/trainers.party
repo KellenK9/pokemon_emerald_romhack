@@ -81,46 +81,6 @@ Gender: Male
 Music: Male
 Double Battle: No
 
-=== TRAINER_BROCK ===
-Name: BROCK
-Class: Leader
-Pic: Leader Brock Frlg
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Strong Trainer
-
-Onix @ Eviolite
-Level: 22
-Ability: Sturdy
-- Sandstorm
-- Stealth Rock
-- Screech
-- Rock Slide
-
-Graveler @ Sitrus Berry
-Level: 22
-Ability: Sand Veil
-- Sandstorm
-- Bulldoze
-- Rock Blast
-- Explosion
-
-Vulpix @ Safety Goggles
-Level: 22
-- Flamethrower
-- Dig
-- Will O Wisp
-- Confuse Ray
-
-Rhyhorn @ Leftovers
-Level: 23
-Ability: Solid Rock
-- Drill Run
-- Rock Blast
-- Megahorn
-- Thunder Fang
-
 === TRAINER_SAWYER_1 ===
 Name: SAWYER
 Class: Hiker
