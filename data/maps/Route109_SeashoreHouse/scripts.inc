@@ -24,7 +24,7 @@ Route109_SeashoreHouse_EventScript_AlreadyGaveIntroduction::
 
 Route109_SeashoreHouse_EventScript_DefeatedTrainers::
 	msgbox Route109_SeashoreHouse_Text_TakeTheseSodaPopBottles, MSGBOX_DEFAULT
-	giveitem ITEM_TM60, 1
+	giveitem ITEM_TM_ENDURE, 1
 	goto_if_eq VAR_RESULT, FALSE, Route109_SeashoreHouse_EventScript_BagFull
 	giveitem ITEM_SODA_POP, 6
 	goto_if_eq VAR_RESULT, FALSE, Route109_SeashoreHouse_EventScript_BagFull

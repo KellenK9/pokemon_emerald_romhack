@@ -10,7 +10,7 @@ AlteringCave_EventScript_Brock::
 	trainerbattle_single TRAINER_BROCK, AlteringCave_Text_BrockIntro, AlteringCave_Text_BrockDefeated
 	msgbox AlteringCave_Text_BrockPostBattle, MSGBOX_DEFAULT
 	closemessage
-	giveitem ITEM_TM52
+	giveitem ITEM_TM_STEALTH_ROCK
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	msgbox AlteringCave_Text_BrockExplainSteelixite, MSGBOX_DEFAULT
 	closemessage
