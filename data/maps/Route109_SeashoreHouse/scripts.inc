@@ -123,7 +123,8 @@ Route109_SeashoreHouse_Text_TakeTheseSodaPopBottles:
 	.string "I'm more than just satisfied!\p"
 	.string "As thanks for showing me your hot\n"
 	.string "streak, I want you to take these.\p"
-	.string "It's half a dozen bottles of SODA POP!$"
+	.string "It's a TM for the move ENDURE and a\n"
+	.string "half dozen bottles of SODA POP!$"
 
 Route109_SeashoreHouse_Text_BagFull:
 	.string "Oh, but hey, your BAG's jammed full.\n"
