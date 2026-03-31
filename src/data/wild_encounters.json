@@ -37000,6 +37000,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_FORTREE_CITY",
+          "base_label": "gFortreeCity",
+          "land_mons": {
+            "encounter_rate": 7,
+            "mons": [
+              {
+                "min_level": 25,
+                "max_level": 27,
+                "species": "SPECIES_PASSIMIAN"
+              },
+              {
+                "min_level": 25,
+                "max_level": 27,
+                "species": "SPECIES_PASSIMIAN"
+              },
+              {
+                "min_level": 25,
+                "max_level": 27,
+                "species": "SPECIES_YANMA"
+              },
+              {
+                "min_level": 25,
+                "max_level": 27,
+                "species": "SPECIES_KECLEON"
+              },
+              {
+                "min_level": 25,
+                "max_level": 27,
+                "species": "SPECIES_SEEDOT"
+              },
+              {
+                "min_level": 25,
+                "max_level": 27,
+                "species": "SPECIES_TANGELA"
+              },
+              {
+                "min_level": 25,
+                "max_level": 27,
+                "species": "SPECIES_NUZLEAF"
+              },
+              {
+                "min_level": 25,
+                "max_level": 27,
+                "species": "SPECIES_SCYTHER"
+              },
+              {
+                "min_level": 25,
+                "max_level": 27,
+                "species": "SPECIES_ABSOL"
+              },
+              {
+                "min_level": 25,
+                "max_level": 27,
+                "species": "SPECIES_YANMA"
+              },
+              {
+                "min_level": 26,
+                "max_level": 28,
+                "species": "SPECIES_TANGROWTH"
+              },
+              {
+                "min_level": 26,
+                "max_level": 28,
+                "species": "SPECIES_TANGROWTH"
+              }
+            ]
+          }
         }
       ]
     },
