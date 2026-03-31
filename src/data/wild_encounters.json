@@ -1186,7 +1186,7 @@
               {
                 "min_level": 14,
                 "max_level": 16,
-                "species": "SPECIES_NUMEL"
+                "species": "SPECIES_VENIPEDE"
               },
               {
                 "min_level": 14,
@@ -1254,8 +1254,8 @@
               },
               {
                 "min_level": 14,
-                "max_level": 14,
-                "species": "SPECIES_SPINDA"
+                "max_level": 16,
+                "species": "SPECIES_VENIPEDE"
               },
               {
                 "min_level": 14,
@@ -1735,23 +1735,23 @@
             "mons": [
               {
                 "min_level": 24,
-                "max_level": 24,
+                "max_level": 26,
                 "species": "SPECIES_ZIGZAGOON"
               },
               {
                 "min_level": 24,
-                "max_level": 24,
+                "max_level": 26,
                 "species": "SPECIES_ELECTRIKE"
               },
               {
-                "min_level": 26,
+                "min_level": 24,
                 "max_level": 26,
-                "species": "SPECIES_ZIGZAGOON"
+                "species": "SPECIES_VENIPEDE"
               },
               {
-                "min_level": 26,
+                "min_level": 24,
                 "max_level": 26,
-                "species": "SPECIES_ELECTRIKE"
+                "species": "SPECIES_WIMPOD"
               },
               {
                 "min_level": 26,
@@ -1764,33 +1764,33 @@
                 "species": "SPECIES_MANECTRIC"
               },
               {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_WINGULL"
+                "min_level": 24,
+                "max_level": 26,
+                "species": "SPECIES_TAILLOW"
               },
               {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_WINGULL"
+                "min_level": 24,
+                "max_level": 26,
+                "species": "SPECIES_GULPIN"
               },
               {
-                "min_level": 26,
+                "min_level": 24,
                 "max_level": 26,
                 "species": "SPECIES_WINGULL"
               },
               {
-                "min_level": 26,
+                "min_level": 24,
                 "max_level": 26,
                 "species": "SPECIES_WINGULL"
               },
               {
-                "min_level": 27,
-                "max_level": 27,
-                "species": "SPECIES_WINGULL"
+                "min_level": 25,
+                "max_level": 26,
+                "species": "SPECIES_KECLEON"
               },
               {
                 "min_level": 25,
-                "max_level": 25,
+                "max_level": 26,
                 "species": "SPECIES_KECLEON"
               }
             ]
