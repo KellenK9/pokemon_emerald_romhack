@@ -363,8 +363,13 @@ Music: Aqua
 Double Battle: No
 AI: Strong Trainer
 
-Carvanha
+Carvanha @ Focus Sash
 Level: 15
+Ability: Swift Swim
+- Protect
+- Bite
+- Poison Fang
+- Dive
 
 === TRAINER_GRUNT_MUSEUM_2 ===
 Name: GRUNT
@@ -375,11 +380,28 @@ Music: Aqua
 Double Battle: No
 AI: Strong Trainer
 
-Zubat
+Zubat @ Eviolite
 Level: 14
+- Confuse Ray
+- Taunt
+- U Turn
+- Wing Attack
 
-Carvanha
+Carvanha @ Focus Sash
 Level: 14
+Ability: Rough Skin
+- Flip Turn
+- Aqua Jet
+- Bite
+- Ice Fang
+
+Basculin @ Eviolite
+Level 14
+Ability: Adaptability
+- Whirlpool
+- Flip Turn
+- Water Pulse
+- Take Down
 
 === TRAINER_GRUNT_SPACE_CENTER_1 ===
 Name: GRUNT
