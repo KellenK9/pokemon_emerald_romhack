@@ -1152,12 +1152,12 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_UNOWN_K"
+                "species": "SPECIES_UNOWN"
               },
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_UNOWN_W"
+                "species": "SPECIES_UNOWN"
               }
             ]
           }

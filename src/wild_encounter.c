@@ -473,6 +473,8 @@ static u8 PickWildMonNature(u32 species)
 void CreateWildMon(u16 species, u8 level)
 {
     ZeroEnemyPartyMons();
+    // Randomize Unown form if the species is Unown
+    species = GetRandomUnownForm(species);
     u32 personality = GetMonPersonality(species, GetSynchronizedGender(WILDMON_ORIGIN, species), PickWildMonNature(species), RANDOM_UNOWN_LETTER);
     CreateMonWithIVs(&gEnemyParty[0], species, level, personality, OTID_STRUCT_PLAYER_ID, USE_RANDOM_IVS);
     GiveMonInitialMoveset(&gEnemyParty[0]);
@@ -1101,6 +1103,48 @@ static bool8 IsAbilityAllowingEncounter(u8 level)
     }
 
     return TRUE;
+}
+
+// Returns a random Unown form if the species is Unown, otherwise returns the original species
+static u16 GetRandomUnownForm(u16 species)
+{
+    if (species == SPECIES_UNOWN){
+        // Array of all 28 Unown forms (A-Z + ! + ?)
+        static const u16 unownForms[] = {
+            SPECIES_UNOWN,                  // A
+            SPECIES_UNOWN_B,                // B
+            SPECIES_UNOWN_C,                // C
+            SPECIES_UNOWN_D,                // D
+            SPECIES_UNOWN_E,                // E
+            SPECIES_UNOWN_F,                // F
+            SPECIES_UNOWN_G,                // G
+            SPECIES_UNOWN_H,                // H
+            SPECIES_UNOWN_I,                // I
+            SPECIES_UNOWN_J,                // J
+            SPECIES_UNOWN_K,                // K
+            SPECIES_UNOWN_L,                // L
+            SPECIES_UNOWN_M,                // M
+            SPECIES_UNOWN_N,                // N
+            SPECIES_UNOWN_O,                // O
+            SPECIES_UNOWN_P,                // P
+            SPECIES_UNOWN_Q,                // Q
+            SPECIES_UNOWN_R,                // R
+            SPECIES_UNOWN_S,                // S
+            SPECIES_UNOWN_T,                // T
+            SPECIES_UNOWN_U,                // U
+            SPECIES_UNOWN_V,                // V
+            SPECIES_UNOWN_W,                // W
+            SPECIES_UNOWN_X,                // X
+            SPECIES_UNOWN_Y,                // Y
+            SPECIES_UNOWN_Z,                // Z
+            SPECIES_UNOWN_EXCLAMATION,      // !
+            SPECIES_UNOWN_QUESTION,         // ?
+        };
+        return unownForms[Random() % ARRAY_COUNT(unownForms)];
+    }
+    else{
+        return species;
+    }
 }
 
 static bool8 TryGetRandomWildMonIndexByType(const struct WildPokemon *wildMon, enum Type type, u8 numMon, u8 *monIndex)
