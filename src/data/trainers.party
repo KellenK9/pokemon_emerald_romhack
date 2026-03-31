@@ -1060,11 +1060,13 @@ Music: Girl
 Double Battle: No
 AI: Strong Trainer
 
-Azurill
-Level: 12
-
-Marill
-Level: 12
+Meowth @ Quick Claw
+Level: 14
+Ability: Technician
+- Fake Out
+- Bite
+- Fury Swipes
+- Metal Claw
 
 === TRAINER_CHARLIE ===
 Name: CHARLIE
@@ -8063,14 +8065,21 @@ Music: Male
 Double Battle: No
 AI: Strong Trainer
 
-Wingull
-Level: 11
+Wingull @ leftovers
+Level: 13
+Ability: Rain Dish
+- Rain Dance
+- Tailwind
+- Supersonic
+- Water Pulse
 
-Machop
-Level: 11
-
-Tentacool
-Level: 11
+Lombre @ Eviolite
+Level: 14
+Ability: Rain Dish
+- Rain Dance
+- Mega Drain
+- Bubble Beam
+- Leech Seed
 
 === TRAINER_PHILLIP ===
 Name: PHILLIP
@@ -10596,8 +10605,17 @@ Music: Female
 Double Battle: No
 AI: Strong Trainer
 
-Goldeen
+Ditto @ Sitrus Berry
 Level: 13
+Ability: Imposter
+
+Ditto @ Sitrus Berry
+Level: 14
+Ability: Imposter
+
+Ditto @ Focus Sash
+Level: 12
+Ability: Imposter
 
 === TRAINER_GERALD ===
 Name: GERALD
