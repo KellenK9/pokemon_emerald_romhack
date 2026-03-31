@@ -945,11 +945,29 @@ Music: Girl
 Double Battle: No
 AI: Strong Trainer
 
-Azurill
+Poliwag @ Focus Sash
 Level: 12
+Ability: Swift Swim
+- Rain Dance
+- Pound
+- Swift
+- Bubble
 
-Azurill
+Psyduck @ Eviolite
 Level: 12
+Ability: Swift Swim
+- Rain Dance
+- Bubble
+- Confusion
+- Icy Wind
+
+Tympole
+Level: 12
+Ability: Swift Swim
+- Rain Dance
+- Bubble
+- Bulldoze
+- Icy Wind
 
 === TRAINER_AUSTINA ===
 Name: AUSTINA
@@ -1044,12 +1062,19 @@ Music: Girl
 Double Battle: No
 AI: Strong Trainer
 
-Zigzagoon
+Azurill @ Choice Band
+Level: 12
+Ability: Huge Power
+- Slam
+- Play Rough
+
+Marill @ Choice Band
 Level: 13
-- Sand Attack
-- Headbutt
-- Tail Whip
-- Surf
+Ability: Huge Power
+- Aqua Tail
+- Play Rough
+- Bounce
+- Slam
 
 === TRAINER_SIMON ===
 Name: SIMON
@@ -8023,11 +8048,20 @@ Music: Male
 Double Battle: No
 AI: Strong Trainer
 
-Wingull
+Wingull @ Wise Glasses
 Level: 12
+- Tailwind
+- Water Pulse
+- Air Slash
+- Supersonic
 
-Machop
+Tentacool @ Eviolite
 Level: 12
+Ability: Clear Body
+- Mega Drain
+- Water Pulse
+- Acid
+- Supersonic
 
 === TRAINER_EDMOND ===
 Name: EDMOND
@@ -8038,8 +8072,20 @@ Music: Male
 Double Battle: No
 AI: Strong Trainer
 
-Wingull
-Level: 13
+Wingull @ Quick Claw
+Level: 12
+Ability: Hydration
+- Rain Dance
+- Bubble
+- Tailwind
+- Air Cutter
+
+Mawile @ Sitrus Berry
+Level: 12
+Ability: Intimidate
+- Dazzling Gleam
+- Rock Slide
+- Iron Head
 
 === TRAINER_ERNEST_1 ===
 Name: ERNEST
@@ -11618,8 +11664,21 @@ Music: Girl
 Double Battle: No
 AI: Strong Trainer
 
-Marill
-Level: 13
+Marill @ Leftovers
+Level: 12
+Ability: Sap Sipper
+- Rain Dance
+- Light Screen
+- Metronome
+- Bubble
+
+Luvdisc @ Focus Sash
+Level: 12
+Ability: Swift Swim
+- Bubble
+- Draining Kiss
+- Icy Wind
+- Captivate
 
 === TRAINER_CHANDLER ===
 Name: CHANDLER
@@ -11630,11 +11689,29 @@ Music: Girl
 Double Battle: No
 AI: Strong Trainer
 
-Tentacool
+Goldeen @ Eviolite
 Level: 12
+Ability: Swift Swim
+- Rain Dance
+- Waterfall
+- Horn Attack
+- Aqua Ring
 
-Tentacool
+Tentacool @ Eviolite
 Level: 12
+Ability: Rain Dish
+- Rain Dance
+- Bubble
+- Acid
+- Swift
+
+Lotad @ Eviolite
+Level: 12
+Ability: Rain Dish
+- Rain Dance
+- Bubble
+- Mega Drain
+- Leech Seed
 
 === TRAINER_KALEB ===
 Name: KALEB
