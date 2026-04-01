@@ -8761,14 +8761,36 @@ Music: Female
 Double Battle: No
 AI: Strong Trainer
 
-Wingull
+Wingull @ Sitrus Berry
 Level: 18
+Ability: Keen Eye
+- Water Pulse
+- Air Cutter
+- Tailwind
+- U-turn
 
-Slugma
+Slugma @ Eviolite
 Level: 18
+Ability: Flame Body
+- Incinerate
+- Ancient Power
+- Clear Smog
+- Mud Shot
 
-Grovyle
+Mawile @ Muscle Band
+Level: 18
+Ability: Intimidate
+- Iron Head
+- Play Rough
+- Knock Off
+- Swords Dance
+
+Grovyle @ Eviolite
 Level: 20
+- Mega Drain
+- Assurance
+- Bullet Seed
+- Rock Tomb
 
 === TRAINER_MAY_ROUTE_119_MUDKIP ===
 Name: MAY
@@ -8811,14 +8833,37 @@ Music: Female
 Double Battle: No
 AI: Strong Trainer
 
-Wingull
+Wingull @ Sitrus Berry
 Level: 18
+Ability: Keen Eye
+- Water Pulse
+- Air Cutter
+- Tailwind
+- U-turn
 
-Lombre
+Lombre @ Eviolite
 Level: 18
+Ability: Own Tempo
+- Mega Drain
+- Bubble Beam
+- Disarming Voice
+- Fake Out
 
-Combusken
+Mawile @ Muscle Band
+Level: 18
+Ability: Intimidate
+- Iron Head
+- Play Rough
+- Knock Off
+- Swords Dance
+
+Combusken @ Eviolite
 Level: 20
+Nature: Adamant
+- Double Kick
+- Fire Punch
+- Aerial Ace
+- Thunder Punch
 
 === TRAINER_MAY_ROUTE_119_TREECKO ===
 Name: MAY
@@ -8861,14 +8906,36 @@ Music: Female
 Double Battle: No
 AI: Strong Trainer
 
-Lombre
+Lombre @ Eviolite
 Level: 18
+Ability: Own Tempo
+- Mega Drain
+- Bubble Beam
+- Disarming Voice
+- Fake Out
 
-Slugma
+Slugma @ Eviolite
 Level: 18
+Ability: Flame Body
+- Incinerate
+- Ancient Power
+- Clear Smog
+- Mud Shot
 
-Marshtomp
+Mawile @ Muscle Band
+Level: 18
+Ability: Intimidate
+- Iron Head
+- Play Rough
+- Knock Off
+- Swords Dance
+
+Marshtomp @ Eviolite
 Level: 20
+- Water Pulse
+- Mud Shot
+- Rock Tomb
+- Avalanche
 
 === TRAINER_MAY_ROUTE_119_TORCHIC ===
 Name: MAY
