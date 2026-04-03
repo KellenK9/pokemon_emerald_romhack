@@ -102,7 +102,7 @@ GraniteCave_StevensRoom_EventScript_Articuno::
 	playmoncry SPECIES_ARTICUNO, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_ARTICUNO, 40
+	setwildbattle SPECIES_ARTICUNO, 45
 	special SetArticunoWildMoves
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
@@ -123,7 +123,7 @@ GraniteCave_StevensRoom_EventScript_Zapdos::
 	playmoncry SPECIES_ZAPDOS, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_ZAPDOS, 40
+	setwildbattle SPECIES_ZAPDOS, 45
 	special SetZapdosWildMoves
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
@@ -144,7 +144,7 @@ GraniteCave_StevensRoom_EventScript_Moltres::
 	playmoncry SPECIES_MOLTRES, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_MOLTRES, 40
+	setwildbattle SPECIES_MOLTRES, 45
 	special SetMoltresWildMoves
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
