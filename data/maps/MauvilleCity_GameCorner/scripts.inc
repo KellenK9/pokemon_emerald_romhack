@@ -148,7 +148,7 @@ MauvilleCity_GameCorner_EventScript_MudkipDoll::
 
 MauvilleCity_GameCorner_EventScript_BanetteDoll::
 	setvar VAR_TEMP_1, 4
-	buffername STR_VAR_1, SPECIES_BANETTE
+	bufferspeciesname STR_VAR_1, SPECIES_BANETTE
 	goto MauvilleCity_GameCorner_EventScript_ConfirmDollPrize
 
 MauvilleCity_GameCorner_EventScript_ConfirmDollPrize::
