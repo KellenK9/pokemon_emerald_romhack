@@ -208,9 +208,7 @@ MauvilleCity_GameCorner_EventScript_BuyBanetteDoll::
 	goto_if_lt VAR_TEMP_2, DOLL_COINS, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForDoll
 	removecoins DOLL_COINS
 	msgbox MauvilleCity_GameCorner_Text_BanetteDollEerie, MSGBOX_DEFAULT
-	setvar VAR_0x8004, SPECIES_BANETTE
-	setvar VAR_0x8005, 5
-	special GivePartyMonToPlayer
+	givemon SPECIES_BANETTE, 5, ITEM_KASIB_BERRY
 	updatecoinsbox 1, 1
 	playse SE_SHOP
 	msgbox MauvilleCity_GameCorner_Text_HereYouGo, MSGBOX_DEFAULT
