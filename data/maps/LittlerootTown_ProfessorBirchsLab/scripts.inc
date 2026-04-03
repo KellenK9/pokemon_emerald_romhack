@@ -352,7 +352,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_PokedexMissions::
 
 LittlerootTown_ProfessorBirchsLab_EventScript_MissionA::
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_PokemonA, MSGBOX_DEFAULT
-	specialvar VAR_RESULT, CheckPartyHasSpecies, SPECIES_FOONGUS
+	checkspecies SPECIES_FOONGUS
 	goto_if_eq VAR_RESULT, TRUE, LittlerootTown_ProfessorBirchsLab_EventScript_HasFoongus
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_PokemonNotFound, MSGBOX_DEFAULT
 	release
@@ -360,7 +360,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_MissionA::
 
 LittlerootTown_ProfessorBirchsLab_EventScript_MissionB::
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_PokemonB, MSGBOX_DEFAULT
-	specialvar VAR_RESULT, CheckPartyHasSpecies, SPECIES_FEEBAS
+	checkspecies SPECIES_FEEBAS
 	goto_if_eq VAR_RESULT, TRUE, LittlerootTown_ProfessorBirchsLab_EventScript_HasFeebas
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_PokemonNotFound, MSGBOX_DEFAULT
 	release
