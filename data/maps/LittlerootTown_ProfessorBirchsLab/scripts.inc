@@ -196,6 +196,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GivePokeballsAfterRivalBattle::
 	call_if_eq VAR_RESULT, FEMALE, LittlerootTown_ProfessorBirchsLab_EventScript_BrendanGivePokeBalls
 	setvar VAR_BIRCH_LAB_STATE, 5
 	setflag FLAG_ADVENTURE_STARTED
+	setvar VAR_LITTLEROOT_MISSIONS, 1
 	setvar VAR_OLDALE_TOWN_STATE, 1
 	setvar VAR_LITTLEROOT_RIVAL_STATE, 4
 	setvar VAR_LITTLEROOT_TOWN_STATE, 3
@@ -323,6 +324,7 @@ LittlerootTown_ProfessorBirchsLab_Movement_PlayerEnterLabForJohtoStarter:
 LittlerootTown_ProfessorBirchsLab_EventScript_Aide::
 	lock
 	faceplayer
+	goto_if_set FLAG_ADVENTURE_STARTED, LittlerootTown_ProfessorBirchsLab_EventScript_PokedexMissions
 	goto_if_ge VAR_BIRCH_LAB_STATE, 3, LittlerootTown_ProfessorBirchsLab_EventScript_AideReceivedStarter
 	goto_if_set FLAG_BIRCH_AIDE_MET, LittlerootTown_ProfessorBirchsLab_EventScript_AideAlreadyMet
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork, MSGBOX_DEFAULT
@@ -337,6 +339,51 @@ LittlerootTown_ProfessorBirchsLab_EventScript_AideAlreadyMet::
 
 LittlerootTown_ProfessorBirchsLab_EventScript_AideReceivedStarter::
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_BirchEnjoysRivalsHelpToo, MSGBOX_DEFAULT
+	release
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_PokedexMissions::
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_SpecificPokemon, MSGBOX_DEFAULT
+	goto_if_eq VAR_LITTLEROOT_MISSIONS, 1, LittlerootTown_ProfessorBirchsLab_EventScript_MissionA
+	goto_if_eq VAR_LITTLEROOT_MISSIONS, 2, LittlerootTown_ProfessorBirchsLab_EventScript_MissionB
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_MissionsComplete
+	release
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_MissionA::
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_PokemonA, MSGBOX_DEFAULT
+	specialvar VAR_RESULT, HasSpeciesInParty, SPECIES_FOONGUS
+	goto_if_eq VAR_RESULT, TRUE, LittlerootTown_ProfessorBirchsLab_EventScript_HasFoongus
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_PokemonNotFound, MSGBOX_DEFAULT
+	release
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_MissionB::
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_PokemonB, MSGBOX_DEFAULT
+	specialvar VAR_RESULT, HasSpeciesInParty, SPECIES_FEEBAS
+	goto_if_eq VAR_RESULT, TRUE, LittlerootTown_ProfessorBirchsLab_EventScript_HasFeebas
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_PokemonNotFound, MSGBOX_DEFAULT
+	release
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_HasFoongus::
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_PokemonFound, MSGBOX_DEFAULT
+	giveitem ITEM_BOTTLE_CAP, 1
+	setvar VAR_LITTLEROOT_MISSIONS, 2
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_MissionB
+	release
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_HasFeebas::
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_PokemonFound, MSGBOX_DEFAULT
+	giveitem ITEM_ABILITY_CAPSULE, 1
+	setvar VAR_LITTLEROOT_MISSIONS, 3
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_MissionsComplete
+	release
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_MissionsComplete::
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_MissionsComplete, MSGBOX_DEFAULT
 	release
 	end
 
@@ -698,6 +745,42 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall::
 	releaseall
 	end
 
+LittlerootTown_ProfessorBirchsLab_Text_SpecificPokemon:
+	.string "I've been studying rare POKéMON\n"
+	.string "found across Hoenn.\p"
+	.string "It would be a big help if you could\n"
+	.string "bring rare POKéMON here for me to see.\p"
+	.string "I can reward you handsomely.$"
+
+LittlerootTown_ProfessorBirchsLab_Text_PokemonNotFound:
+	.string "Come see me once you've found\n"
+	.string "that POKéMON.$"
+
+LittlerootTown_ProfessorBirchsLab_Text_PokemonFound:
+	.string "Wow! You've found it!\p"
+	.string "Thanks for letting me see that rare\n"
+	.string "POKéMON. Here's your reward.$"
+
+LittlerootTown_ProfessorBirchsLab_Text_PokemonA:
+	.string "The first POKéMON I'm looking for\n"
+	.string "resembles a mushroom.\p"
+	.string "It's native to Unova but I heard it\n"
+	.string "was recently found in Petalburg Woods.$"
+
+LittlerootTown_ProfessorBirchsLab_Text_PokemonB:
+	.string "The next POKéMON I want you to find\n"
+	.string "is a strange fish native to Hoenn.\p"
+	.string "It used to be exceptionally rare\n"
+	.string "but nowadays it can be found while\l"
+	.string "fishing in any body of freshwater.\p"
+	.string "This POKéMON exhibits a trait rarely\n"
+	.string "found in fish: vanity.$"
+
+LittlerootTown_ProfessorBirchsLab_Text_MissionsComplete:
+	.string "You've found every POKéMON that\n"
+	.string "I was searching for.\p"
+	.string "Thank you so much for all your help!$"
+
 LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork:
 	.string "Hunh? PROF. BIRCH?\p"
 	.string "The PROF's away on fieldwork.\n"
@@ -721,7 +804,9 @@ LittlerootTown_ProfessorBirchsLab_Text_BirchEnjoysRivalsHelpToo:
 	.string "PROF. BIRCH is studying the habitats\n"
 	.string "and distribution of POKéMON.\p"
 	.string "The PROF enjoys {RIVAL}'s help, too.\n"
-	.string "There's a lot of love there.$"
+	.string "There's a lot of love there.\p"
+	.string "Come talk to me after you've\n"
+	.string "met {RIVAL}.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_LikeYouToHavePokemon:
 	.string "PROF. BIRCH: So, {PLAYER}{KUN}.\p"
@@ -830,8 +915,10 @@ LittlerootTown_ProfessorBirchsLab_Text_ThankYouForFillingPokedex:
 	.string "PROF. BIRCH: {PLAYER}{KUN}, I want to thank\n"
 	.string "you for undertaking such a grand\l"
 	.string "journey to fill out the POKéDEX.\p"
-	.string "Your dedication to the task has been\n"
-	.string "truly impressive!$"
+	.string "Your efforts will provide a massive\n"
+	.string "boost to my research.\p"
+	.string "If you'd like to help even further,\n"
+	.string "please speak to my assistant.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_DexnavUpdatedVersion:
 	.string "PROF. BIRCH: {PLAYER}{KUN}, this is\n"
