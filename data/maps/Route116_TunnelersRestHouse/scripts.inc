@@ -43,7 +43,7 @@ Route116_TunnelersRestHouse_Text_ManDiggingHisWayToVerdanturf:
 	.string "Whismur.\p"
 	.string "Recently, rock POKéMON from other\n"
 	.string "regions have also settled there.\p"
-	.string "I wonder how that makes the\l"
+	.string "I wonder how that makes the\n"
 	.string "Whismur feel.$"
 
 Route116_TunnelersRestHouse_Text_GetToVerdanturfWithoutTunnel:
