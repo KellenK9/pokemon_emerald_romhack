@@ -186,7 +186,7 @@ PetalburgCity_Gym_EventScript_BeginWallyTutorial::
 	closemessage
 	setflag FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM
 	setvar VAR_PETALBURG_GYM_STATE, 2
-	setvar VAR_PETALBURG_CITY_STATE, 2
+	setvar VAR_PETALBURG_CITY_STATE, 3
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL
 	special InitBirchState
 	releaseall
