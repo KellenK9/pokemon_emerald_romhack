@@ -7,6 +7,7 @@ OldaleTown_House1_EventScript_Woman::
 	goto_if_set FLAG_GIVEN_TOGEPI, OldaleTown_House1_EventScript_AlreadyReceivedTogepi
 	specialvar VAR_RESULT, GetCaughtNationalPokedexCount
 	goto_if_ge VAR_RESULT, 20, OldaleTown_House1_EventScript_CanGiveTogepi
+	buffervar STR_VAR_1, VAR_RESULT
 	msgbox OldaleTown_House1_Text_MoreExperiencedTrainer, MSGBOX_DEFAULT
 	release
 	end
@@ -64,7 +65,7 @@ OldaleTown_House1_Text_MoreExperiencedTrainer:
 	.string "it won't be able to do that with me.\p"
 	.string "Are you an experienced trainer who\n"
 	.string "can take Togepi?\p"
-	.string "Oh. It seems you haven't caught many\n"
+	.string "Oh. You've only caught {STR_VAR_1}\n"
 	.string "different POKéMON.\p"
 	.string "Come back when you've caught 20\n"
 	.string "different species of POKéMON.\l"
