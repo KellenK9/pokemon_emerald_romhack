@@ -2,6 +2,7 @@
 #include "battle_main.h"
 #include "battle_setup.h"
 #include "bg.h"
+#include "caps.h"
 #include "data.h"
 #include "daycare.h"
 #include "decompress.h"
@@ -1223,6 +1224,7 @@ static u8 DexNavTryGenerateMonLevel(u16 species, enum EncounterType environment)
 {
     u8 levelBase = GetEncounterLevelFromMapData(species, environment);
     u8 levelBonus = gSaveBlock3Ptr->dexNavChain / 5;
+    u8 levelCap = GetCurrentLevelCap();
 
     if (levelBase == MON_LEVEL_NONEXISTENT)
         return MON_LEVEL_NONEXISTENT;   //species not found in the area
@@ -1232,6 +1234,8 @@ static u8 DexNavTryGenerateMonLevel(u16 species, enum EncounterType environment)
 
     if (levelBase + levelBonus > MAX_LEVEL)
         return MAX_LEVEL;
+    if (levelBase + levelBonus > levelCap)
+        return levelCap;
     else
         return levelBase + levelBonus;
 }
