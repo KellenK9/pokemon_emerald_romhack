@@ -4660,6 +4660,11 @@ bool16 HasAllMons(void)
     return TRUE;
 }
 
+u16 GetCaughtNationalPokedexCount(void)
+{
+    return GetNationalPokedexCount(FLAG_GET_CAUGHT);
+}
+
 static void ResetOtherVideoRegisters(u16 regBits)
 {
     if (!(regBits & DISPCNT_BG0_ON))
