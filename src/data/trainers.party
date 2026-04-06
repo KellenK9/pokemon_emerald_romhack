@@ -4624,10 +4624,15 @@ Pic: School Kid M
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Strong Trainer
+AI: Double Trainer
 
-Ralts
-Level: 9
+Tangela @ Eviolite
+Level: 13
+Ability: Clorophyll
+- Mega Drain
+- Growth
+- Acid Spray
+- Bullet Seed
 
 === TRAINER_TED ===
 Name: TED
@@ -10059,10 +10064,12 @@ Pic: Lass
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Strong Trainer
+AI: Double Trainer
 
-Marill
-Level: 9
+Vulpix @ Choice Scarf
+Level: 12
+Ability: Drought
+- Incinerate
 
 === TRAINER_VIVI ===
 Name: VIVI
@@ -11708,13 +11715,19 @@ Pic: Rich Boy
 Gender: Male
 Music: Rich
 Double Battle: No
-AI: Strong Trainer
+AI: Double Trainer
 
-Zigzagoon @ Nugget
-Level: 8
+Clefairy @ Wise Glasses
+Level: 11
+- Disarming Voice
+- Swift
+- Light Screen
 
-Poochyena
-Level: 8
+Wingull @ Oran Berry
+Level: 11
+- Twister
+- Bubble
+- Air Cutter
 
 === TRAINER_SARAH ===
 Name: SARAH
@@ -11723,13 +11736,19 @@ Pic: Lady
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Strong Trainer
+AI: Double Trainer
 
-Lotad
-Level: 8
+Illumise @ Silver Powder
+Level: 11
+Ability: Tinted Lens
+- Struggle Bug
+- Electro Web
+- Swift
 
-Zigzagoon @ Nugget
-Level: 8
+Bellsprout @ Black Sludge
+Level: 11
+- Acid
+- Razor Leaf
 
 === TRAINER_DARIAN ===
 Name: DARIAN
