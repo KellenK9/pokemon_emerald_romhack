@@ -511,18 +511,19 @@ BattleFrontier_ExchangeServiceCorner_Text_FocusBandDesc::
 BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDesc::
 	.string "A hold item that raises the\n"
 	.string "critical-hit rate.$"
+
 BattleFrontier_ExchangeServiceCorner_Text_AbilityCapsuleDesc::
-	.string "Allows a POKéMON to switch its"
+	.string "Allows a POKéMON to switch its\n"
 	.string "ability to another ability.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_AbilityPatchDesc::
-	.string "Unlocks the hidden ability of a"
+	.string "Unlocks the hidden ability of a\n"
 	.string "POKéMON.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_BottleCapDesc::
-	.string "Used to Hyper Train a POKéMON"
+	.string "Used to Hyper Train a POKéMON\n"
 	.string "with maxed IVs.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_GoldBottleCapDesc::
-	.string "Used to Hyper Train a POKéMON"
-	.string "with maxed IVs.$
+	.string "Used to Hyper Train a POKéMON\n"
+	.string "with maxed IVs.$"
