@@ -213,13 +213,11 @@ BattleFrontier_ExchangeServiceCorner_EventScript_ChooseVitamin::
 	waitstate
 	special CloseFrontierExchangeCornerItemIconWindow
 	switch VAR_RESULT
-	case 0, BattleFrontier_ExchangeServiceCorner_EventScript_Protein
-	case 1, BattleFrontier_ExchangeServiceCorner_EventScript_Calcium
-	case 2, BattleFrontier_ExchangeServiceCorner_EventScript_Iron
-	case 3, BattleFrontier_ExchangeServiceCorner_EventScript_Zinc
-	case 4, BattleFrontier_ExchangeServiceCorner_EventScript_Carbos
-	case 5, BattleFrontier_ExchangeServiceCorner_EventScript_HPUp
-	case 6, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
+	case 0, BattleFrontier_ExchangeServiceCorner_EventScript_AbilityCapsule
+	case 1, BattleFrontier_ExchangeServiceCorner_EventScript_AbilityPatch
+	case 2, BattleFrontier_ExchangeServiceCorner_EventScript_BottleCap
+	case 3, BattleFrontier_ExchangeServiceCorner_EventScript_GoldBottleCap
+	case 4, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
 	case MULTI_B_PRESSED, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
 	end
 
@@ -230,28 +228,20 @@ BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseVitamin::
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 	end
 
-BattleFrontier_ExchangeServiceCorner_EventScript_Protein::
-	setitemandprice ITEM_PROTEIN, 1
+BattleFrontier_ExchangeServiceCorner_EventScript_AbilityCapsule::
+	setitemandprice ITEM_ABILITY_CAPSULE, 24
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseVitamin
 
-BattleFrontier_ExchangeServiceCorner_EventScript_Calcium::
-	setitemandprice ITEM_CALCIUM, 1
+BattleFrontier_ExchangeServiceCorner_EventScript_AbilityPatch::
+	setitemandprice ITEM_ABILITY_PATCH, 36
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseVitamin
 
-BattleFrontier_ExchangeServiceCorner_EventScript_Iron::
-	setitemandprice ITEM_IRON, 1
+BattleFrontier_ExchangeServiceCorner_EventScript_BottleCap::
+	setitemandprice ITEM_BOTTLE_CAP, 24
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseVitamin
 
-BattleFrontier_ExchangeServiceCorner_EventScript_Zinc::
-	setitemandprice ITEM_ZINC, 1
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseVitamin
-
-BattleFrontier_ExchangeServiceCorner_EventScript_Carbos::
-	setitemandprice ITEM_CARBOS, 1
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseVitamin
-
-BattleFrontier_ExchangeServiceCorner_EventScript_HPUp::
-	setitemandprice ITEM_HP_UP, 1
+BattleFrontier_ExchangeServiceCorner_EventScript_GoldBottleCap::
+	setitemandprice ITEM_GOLD_BOTTLE_CAP, 72
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseVitamin
 
 
@@ -521,3 +511,18 @@ BattleFrontier_ExchangeServiceCorner_Text_FocusBandDesc::
 BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDesc::
 	.string "A hold item that raises the\n"
 	.string "critical-hit rate.$"
+BattleFrontier_ExchangeServiceCorner_Text_AbilityCapsuleDesc::
+	.string "Allows a POKéMON to switch its"
+	.string "ability to another ability.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_AbilityPatchDesc::
+	.string "Unlocks the hidden ability of a"
+	.string "POKéMON.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_BottleCapDesc::
+	.string "Used to Hyper Train a POKéMON"
+	.string "with maxed IVs.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_GoldBottleCapDesc::
+	.string "Used to Hyper Train a POKéMON"
+	.string "with maxed IVs.$

@@ -25,12 +25,10 @@ static const u16 sFrontierExchangeCorner_Decor2[] =
 
 static const u16 sFrontierExchangeCorner_Vitamins[] =
 {
-    ITEM_PROTEIN,
-    ITEM_CALCIUM,
-    ITEM_IRON,
-    ITEM_ZINC,
-    ITEM_CARBOS,
-    ITEM_HP_UP,
+    ITEM_ABILITY_CAPSULE,
+    ITEM_ABILITY_PATCH,
+    ITEM_BOTTLE_CAP,
+    ITEM_GOLD_BOTTLE_CAP,
     ITEM_LIST_END
 };
 
@@ -75,12 +73,10 @@ static const u8 *const sFrontierExchangeCorner_Decor2Descriptions[] =
 
 static const u8 *const sFrontierExchangeCorner_VitaminsDescriptions[] =
 {
-    BattleFrontier_ExchangeServiceCorner_Text_ProteinDesc,
-    BattleFrontier_ExchangeServiceCorner_Text_CalciumDesc,
-    BattleFrontier_ExchangeServiceCorner_Text_IronDesc,
-    BattleFrontier_ExchangeServiceCorner_Text_ZincDesc,
-    BattleFrontier_ExchangeServiceCorner_Text_CarbosDesc,
-    BattleFrontier_ExchangeServiceCorner_Text_HPUpDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_AbilityCapsuleDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_AbilityPatchDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_BottleCapDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_GoldBottleCapDesc,
     gText_Exit
 };
 
