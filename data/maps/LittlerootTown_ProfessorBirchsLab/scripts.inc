@@ -366,6 +366,30 @@ LittlerootTown_ProfessorBirchsLab_EventScript_MissionB::
 	release
 	end
 
+LittlerootTown_ProfessorBirchsLab_EventScript_MissionC::
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_PokemonC, MSGBOX_DEFAULT
+	checkspecies SPECIES_SANDILE
+	goto_if_eq VAR_RESULT, TRUE, LittlerootTown_ProfessorBirchsLab_EventScript_HasSandile
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_PokemonNotFound, MSGBOX_DEFAULT
+	release
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_MissionD::
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_PokemonD, MSGBOX_DEFAULT
+	checkspecies SPECIES_PASSIMIAN
+	goto_if_eq VAR_RESULT, TRUE, LittlerootTown_ProfessorBirchsLab_EventScript_HasPassimian
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_PokemonNotFound, MSGBOX_DEFAULT
+	release
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_MissionE::
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_PokemonE, MSGBOX_DEFAULT
+	checkspecies SPECIES_MANTINE
+	goto_if_eq VAR_RESULT, TRUE, LittlerootTown_ProfessorBirchsLab_EventScript_HasMantine
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_PokemonNotFound, MSGBOX_DEFAULT
+	release
+	end
+
 LittlerootTown_ProfessorBirchsLab_EventScript_HasFoongus::
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_PokemonFound, MSGBOX_DEFAULT
 	giveitem ITEM_BOTTLE_CAP, 1
@@ -378,6 +402,30 @@ LittlerootTown_ProfessorBirchsLab_EventScript_HasFeebas::
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_PokemonFound, MSGBOX_DEFAULT
 	giveitem ITEM_ABILITY_CAPSULE, 1
 	setvar VAR_LITTLEROOT_MISSIONS, 3
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_MissionC
+	release
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_HasSandile::
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_PokemonFound, MSGBOX_DEFAULT
+	giveitem ITEM_ABILITY_PATCH, 1
+	setvar VAR_LITTLEROOT_MISSIONS, 4
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_MissionD
+	release
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_HasPassimian::
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_PokemonFound, MSGBOX_DEFAULT
+	giveitem ITEM_MANECTITE, 1
+	setvar VAR_LITTLEROOT_MISSIONS, 5
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_MissionE
+	release
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_HasMantine::
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_PokemonFound, MSGBOX_DEFAULT
+	giveitem ITEM_MAWILITE, 1
+	setvar VAR_LITTLEROOT_MISSIONS, 6
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_MissionsComplete
 	release
 	end
@@ -775,6 +823,29 @@ LittlerootTown_ProfessorBirchsLab_Text_PokemonB:
 	.string "fishing in any body of freshwater.\p"
 	.string "This POKéMON exhibits a trait rarely\n"
 	.string "found in fish: vanity.$"
+
+LittlerootTown_ProfessorBirchsLab_Text_PokemonC:
+	.string "Next I want you to find a POKéMON\n"
+	.string "that lives buried in the sand.\p"
+	.string "It originates from Unova as the\n"
+	.string "apex crocodilian of that region.$"
+
+LittlerootTown_ProfessorBirchsLab_Text_PokemonD:
+	.string "The next POKéMON I want you to find\n"
+	.string "hails from the Alola region.\p"
+	.string "It's orangutan counterpart hasn't\n"
+	.string "joined in it's migration,\l"
+	.string "though it's a mystery why.\p"
+	.string "You should be able to find it\n"
+	.string "swinging around the brush in Fortree.$"
+
+LittlerootTown_ProfessorBirchsLab_Text_PokemonE:
+	.string "Next I want you to find a POKéMON\n"
+	.string "that sails across the vast oceans\l"
+	.string "of the world.\p"
+	.string "I've heard it can only be obtained\n"
+	.string "through it's unique evolution\l"
+	.string "involving Remoraid.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MissionsComplete:
 	.string "You've found every POKéMON that\n"
