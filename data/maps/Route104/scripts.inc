@@ -149,6 +149,7 @@ Route104_EventScript_BattleMay::
 
 Route104_EventScript_MayDefeated::
 	msgbox Route104_Text_MayPostBattle, MSGBOX_DEFAULT
+	giveitem ITEM_TM_FALSE_SWIPE
 	call_if_eq VAR_0x8008, 0, Route104_EventScript_RestoreMusic
 	releaseall
 	end
@@ -221,6 +222,7 @@ Route104_EventScript_BattleBrendan::
 
 Route104_EventScript_BrendanDefeated::
 	msgbox Route104_Text_BrendanPostBattle, MSGBOX_DEFAULT
+	giveitem ITEM_TM_FALSE_SWIPE
 	call_if_eq VAR_0x8008, 0, Route104_EventScript_RestoreMusic
 	releaseall
 	end
@@ -1119,7 +1121,9 @@ Route104_Text_MayPostBattle:
 	.string "But instead of only making them\n"
 	.string "battle, you should be like MR. BRINEY.\p"
 	.string "It's important to become friends with\n"
-	.string "POKéMON, too.$"
+	.string "POKéMON, too.\p"
+	.string "I have a gift for you that should\n"
+	.string "help in assisting my dad's research.$"
 
 Route104_Text_BrendanWeShouldRegister:
 	.string "BRENDAN: Oh, hey, {PLAYER}!\p"
@@ -1163,4 +1167,6 @@ Route104_Text_BrendanPostBattle:
 	.string "But, you know, you shouldn't just be\n"
 	.string "making POKéMON battle.\p"
 	.string "Like MR. BRINEY, it's important to\n"
-	.string "become friends with your POKéMON.$"
+	.string "become friends with your POKéMON.\p"
+	.string "I have a gift for you that should\n"
+	.string "help in aiding my father's research.$"
