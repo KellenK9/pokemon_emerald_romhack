@@ -7,7 +7,7 @@ OldaleTown_House1_EventScript_Woman::
 	goto_if_set FLAG_GIVEN_TOGEPI, OldaleTown_House1_EventScript_AlreadyReceivedTogepi
 	specialvar VAR_RESULT, GetCaughtNationalPokedexCount
 	goto_if_ge VAR_RESULT, 20, OldaleTown_House1_EventScript_CanGiveTogepi
-	buffernumber STR_VAR_1, VAR_RESULT
+	buffernumberstring STR_VAR_1, VAR_RESULT
 	msgbox OldaleTown_House1_Text_MoreExperiencedTrainer, MSGBOX_DEFAULT
 	release
 	end
