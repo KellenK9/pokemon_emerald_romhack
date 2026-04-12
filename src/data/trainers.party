@@ -9862,11 +9862,21 @@ Music: Male
 Double Battle: No
 AI: Strong Trainer
 
-Lotad
-Level: 13
-
-Torchic
+Lotad @ Eviolite
 Level: 15
+Ability: Own Tempo
+- Mega Drain
+- Water Gun
+- Disarming Voice
+- Fake Out
+
+Combusken @ Eviolite
+Level: 16
+Nature: Adamant
+- Double Kick
+- Flame Charge
+- Quick Attack
+- Peck
 
 === TRAINER_BRENDAN_RUSTBORO_MUDKIP ===
 Name: BRENDAN
@@ -9877,11 +9887,20 @@ Music: Male
 Double Battle: No
 AI: Strong Trainer
 
-Wingull
-Level: 13
-
-Treecko
+Wingull @ Wide Lens
 Level: 15
+Ability: Keen Eye
+- Water Gun
+- Air Cutter
+- Supersonic
+- Whirlpool
+
+Grovyle @ Eviolite
+Level: 16
+- Mega Drain
+- Assurance
+- Bullet Seed
+- Rock Tomb
 
 === TRAINER_PAXTON ===
 Name: PAXTON
@@ -9970,11 +9989,20 @@ Music: Male
 Double Battle: No
 AI: Strong Trainer
 
-Slugma
-Level: 13
-
-Mudkip
+Slugma @ Eviolite
 Level: 15
+Ability: Flame Body
+- Ember
+- Yawn
+- Smog
+- Mud Slap
+
+Marshtomp @ Eviolite
+Level: 16
+- Water Gun
+- Mud Shot
+- Rock Throw
+- Rock Smash
 
 === TRAINER_MAY_RUSTBORO_MUDKIP ===
 Name: MAY
@@ -9985,11 +10013,20 @@ Music: Female
 Double Battle: No
 AI: Champion Trainer
 
-Wingull
-Level: 13
-
-Treecko
+Wingull @ Wide Lens
 Level: 15
+Ability: Keen Eye
+- Water Gun
+- Air Cutter
+- Supersonic
+- Whirlpool
+
+Grovyle @ Eviolite
+Level: 16
+- Mega Drain
+- Assurance
+- Bullet Seed
+- Rock Tomb
 
 === TRAINER_MAXIE_MAGMA_HIDEOUT ===
 Name: MAXIE
@@ -12824,11 +12861,21 @@ Music: Female
 Double Battle: No
 AI: Strong Trainer
 
-Lotad
-Level: 13
-
-Torchic
+Lotad @ Eviolite
 Level: 15
+Ability: Own Tempo
+- Mega Drain
+- Water Gun
+- Disarming Voice
+- Fake Out
+
+Combusken @ Eviolite
+Level: 16
+Nature: Adamant
+- Double Kick
+- Flame Charge
+- Quick Attack
+- Peck
 
 === TRAINER_MAY_RUSTBORO_TORCHIC ===
 Name: MAY
@@ -12839,11 +12886,20 @@ Music: Female
 Double Battle: No
 AI: Strong Trainer
 
-Torkoal
-Level: 13
-
-Mudkip
+Slugma @ Eviolite
 Level: 15
+Ability: Flame Body
+- Ember
+- Yawn
+- Smog
+- Mud Slap
+
+Marshtomp @ Eviolite
+Level: 16
+- Water Gun
+- Mud Shot
+- Rock Throw
+- Rock Smash
 
 === TRAINER_ROXANNE_2 ===
 Name: ROXANNE
