@@ -9330,7 +9330,7 @@
       "width": 86,
       "height": 87,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_HallOfFame",
+      "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/SouthernPlains/border.bin",
       "blockdata_filepath": "data/layouts/SouthernPlains/map.bin"
     }
