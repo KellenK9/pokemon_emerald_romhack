@@ -1,6 +1,14 @@
 {
   "map_sections": [
     {
+      "id": "MAPSEC_SOUTHERN_PLAINS",
+      "name": "SOUTHERN PLAINS",
+      "x": 5,
+      "y": 11,
+      "width": 2,
+      "height": 2
+    },
+    {
       "id": "MAPSEC_LITTLEROOT_TOWN",
       "name": "LITTLEROOT TOWN",
       "x": 4,
@@ -26,7 +34,7 @@
     },
     {
       "id": "MAPSEC_LAVARIDGE_TOWN",
-      "name": "SOUTHERN PLAINS",
+      "name": "LAVARIDGE TOWN",
       "x": 5,
       "y": 3,
       "width": 1,
