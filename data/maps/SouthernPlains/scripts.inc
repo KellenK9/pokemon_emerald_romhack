@@ -4,7 +4,7 @@ SouthernPlains_MapScripts::
 
 SouthernPlains_OnTransition::
 	goto_if_set FLAG_BIRCH_INTRO_COMPLETE, SouthernPlains_EventScript_BirchIntroComplete
-	SouthernPlains_EventScript_Birch
+	goto SouthernPlains_EventScript_Birch
 	end
 
 SouthernPlains_EventScript_BirchIntroComplete::
