@@ -12,9 +12,9 @@ SouthernPlains_EventScript_BirchIntroComplete::
 
 SouthernPlains_EventScript_Birch::
 	lockall
-	applymovement LOCALID_BIRCH, SouthernPlains_Movement_BirchWalkRight
+	applymovement LOCALID_SOUTHERN_PLAINS_BIRCH, SouthernPlains_Movement_BirchWalkRight
 	waitmovement 0
-	applymovement LOCALID_BIRCH, SouthernPlains_Movement_BirchFaceUp
+	applymovement LOCALID_SOUTHERN_PLAINS_BIRCH, SouthernPlains_Movement_BirchFaceUp
 	waitmovement 0
 	delay 30
 	
@@ -55,11 +55,11 @@ SouthernPlains_EventScript_ContinueAfterEevee::
 	msgbox SouthernPlains_Text_BirchWishesLuck, MSGBOX_DEFAULT
 	msgbox SouthernPlains_Text_BirchHealing, MSGBOX_DEFAULT
 	
-	applymovement LOCALID_BIRCH, SouthernPlains_Movement_BirchFaceLeft
+	applymovement LOCALID_SOUTHERN_PLAINS_BIRCH, SouthernPlains_Movement_BirchFaceLeft
 	waitmovement 0
-	applymovement LOCALID_BIRCH, SouthernPlains_Movement_BirchWalkLeft
+	applymovement LOCALID_SOUTHERN_PLAINS_BIRCH, SouthernPlains_Movement_BirchWalkLeft
 	waitmovement 0
-	applymovement LOCALID_BIRCH, SouthernPlains_Movement_BirchFaceDown
+	applymovement LOCALID_SOUTHERN_PLAINS_BIRCH, SouthernPlains_Movement_BirchFaceDown
 	waitmovement 0
 	
 	setflag FLAG_BIRCH_INTRO_COMPLETE
