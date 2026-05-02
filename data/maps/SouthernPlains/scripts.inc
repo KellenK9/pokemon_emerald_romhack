@@ -135,7 +135,7 @@ SouthernPlains_Text_BirchWishesLuck::
 	.string "this world's wonders.$"
 
 SouthernPlains_Text_BirchHealing::
-	.string "Oh, and one more thing—whenever you\n"
+	.string "Oh, and one more thing. Whenever you\n"
 	.string "need to heal your POKéMON, just\l"
 	.string "come find me.\p"
 	.string "I'll take good care of them and\n"
