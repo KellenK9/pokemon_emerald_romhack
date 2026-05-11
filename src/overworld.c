@@ -1886,9 +1886,18 @@ void CB2_NewGame(void)
     ScriptContext_Init();
     UnlockPlayerFieldControls();
     if (IS_FRLG)
+    {
         gFieldCallback = FieldCB_WarpExitFadeFromBlack;
-    else
+    }
+    else if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_INSIDE_OF_TRUCK)
+          && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_INSIDE_OF_TRUCK))
+    {
         gFieldCallback = ExecuteTruckSequence;
+    }
+    else
+    {
+        gFieldCallback = FieldCB_WarpExitFadeFromBlack;
+    }
     gFieldCallback2 = NULL;
     DoMapLoadLoop(&gMain.state);
     SetFieldVBlankCallback();

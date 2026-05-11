@@ -259,6 +259,13 @@ static void Task_HandleTruckSequence(u8 taskId)
 
 void ExecuteTruckSequence(void)
 {
+    if (gSaveBlock1Ptr->location.mapGroup != MAP_GROUP(MAP_INSIDE_OF_TRUCK)
+     || gSaveBlock1Ptr->location.mapNum != MAP_NUM(MAP_INSIDE_OF_TRUCK))
+    {
+        FieldCB_WarpExitFadeFromBlack();
+        return;
+    }
+
     MapGridSetMetatileIdAt(4 + MAP_OFFSET, 1 + MAP_OFFSET, METATILE_InsideOfTruck_DoorClosedFloor_Top);
     MapGridSetMetatileIdAt(4 + MAP_OFFSET, 2 + MAP_OFFSET, METATILE_InsideOfTruck_DoorClosedFloor_Mid);
     MapGridSetMetatileIdAt(4 + MAP_OFFSET, 3 + MAP_OFFSET, METATILE_InsideOfTruck_DoorClosedFloor_Bottom);
