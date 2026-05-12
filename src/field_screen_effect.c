@@ -319,6 +319,15 @@ void FieldCB_WarpExitFadeFromBlack(void)
     LockPlayerFieldControls();
 }
 
+void FieldCB_NewGameNoTruck(void)
+{
+    if (!OnTrainerHillEReaderChallengeFloor()) // always false
+        Overworld_PlaySpecialMapMusic();
+    FadeInFromBlack();
+    SetUpWarpExitTask();
+    LockPlayerFieldControls();
+}
+
 static void FieldCB_SpinEnterWarp(void)
 {
     Overworld_PlaySpecialMapMusic();

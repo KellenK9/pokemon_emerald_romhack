@@ -1896,7 +1896,7 @@ void CB2_NewGame(void)
     }
     else
     {
-        gFieldCallback = FieldCB_WarpExitFadeFromBlack;
+        gFieldCallback = FieldCB_NewGameNoTruck;
     }
     gFieldCallback2 = NULL;
     DoMapLoadLoop(&gMain.state);

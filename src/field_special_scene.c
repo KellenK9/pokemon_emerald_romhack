@@ -262,7 +262,7 @@ void ExecuteTruckSequence(void)
     if (gSaveBlock1Ptr->location.mapGroup != MAP_GROUP(MAP_INSIDE_OF_TRUCK)
      || gSaveBlock1Ptr->location.mapNum != MAP_NUM(MAP_INSIDE_OF_TRUCK))
     {
-        FieldCB_WarpExitFadeFromBlack();
+        FieldCB_NewGameNoTruck();
         return;
     }
 
